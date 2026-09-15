@@ -10,5 +10,6 @@ export default defineConfig({
   ],
   // ⚠️ EDIT_ME: Change to match your GitHub repo name
   // Remove or set to '/' if using a custom domain
-  base: '/MyPortafolio/',
+  base: '/vtuber-portfolio/',
 })
+
