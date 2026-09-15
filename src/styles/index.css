@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+/* ============================================================
+   VTuber Portfolio — Global Design System
+   Theatrical dark aesthetic: burgundy / charcoal / gold
+   ============================================================ */
+
+/* --- Custom Theme Variables --- */
+@theme {
+  /* Burgundy palette — curtains & theatrical framing */
+  --color-burgundy-900: #2D0A0A;
+  --color-burgundy-800: #4A1424;
+  --color-burgundy-700: #6B1D32;
+  --color-burgundy-600: #8B2545;
+  --color-burgundy-500: #A83058;
+
+  /* Charcoal palette — main content surfaces */
+  --color-charcoal-950: #0F0D0C;
+  --color-charcoal-900: #1A1412;
+  --color-charcoal-800: #2A2220;
+  --color-charcoal-700: #3A322F;
+  --color-charcoal-600: #4A423E;
+
+  /* Gold palette — decorative accents & CTAs */
+  --color-gold-600: #B8962E;
+  --color-gold-500: #C9A84C;
+  --color-gold-400: #D4B96A;
+  --color-gold-300: #E0CA88;
+  --color-gold-200: #ECDBAa;
+
+  /* Cream palette — text */
+  --color-cream-50: #FDFAF5;
+  --color-cream-100: #F5F0E8;
+  --color-cream-200: #E8E0D0;
+  --color-cream-300: #D4C9B8;
+
+  /* Functional */
+  --color-success: #4ADE80;
+  --color-error: #F87171;
+  --color-warning: #FBBF24;
+
+  /* Font families */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* --- Base styles --- */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-charcoal-950);
+    color: var(--color-cream-100);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-cream-50);
+    line-height: 1.2;
+  }
+
+  a {
+    color: var(--color-gold-400);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--color-gold-300);
+  }
+
+  /* Focus states for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--color-gold-500);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-burgundy-700);
+    color: var(--color-cream-50);
+  }
+}
+
+/* --- Utility classes --- */
+@layer utilities {
+  /* Diamond pattern background */
+  .bg-diamond-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 0 L24 12 L12 24 L0 12 Z' fill='none' stroke='%23C9A84C' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
+  }
+
+  /* Ornamental gold border */
+  .border-ornamental {
+    border: 1px solid var(--color-gold-500);
+    box-shadow:
+      inset 0 0 0 1px rgba(201, 168, 76, 0.1),
+      0 0 20px rgba(201, 168, 76, 0.05);
+  }
+
+  /* Gold glow for CTAs */
+  .glow-gold {
+    box-shadow:
+      0 0 15px rgba(201, 168, 76, 0.2),
+      0 0 45px rgba(201, 168, 76, 0.1);
+  }
+
+  /* Theatrical curtain gradient */
+  .bg-curtain-left {
+    background: linear-gradient(
+      to right,
+      var(--color-burgundy-800) 0%,
+      var(--color-burgundy-700) 40%,
+      transparent 100%
+    );
+  }
+
+  .bg-curtain-right {
+    background: linear-gradient(
+      to left,
+      var(--color-burgundy-800) 0%,
+      var(--color-burgundy-700) 40%,
+      transparent 100%
+    );
+  }
+
+  /* Text gradient for headings */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-300));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section wrapper for consistent spacing */
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  /* Scrollbar styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-charcoal-900);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-charcoal-600);
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold-500);
+  }
+
+  /* File upload drop zone */
+  .file-upload-area {
+    position: relative;
+  }
+
+  .file-upload-area:hover {
+    border-color: var(--color-gold-500);
+    background-color: rgba(201, 168, 76, 0.03);
+  }
+
+  /* Fade-in animation for form sections */
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
