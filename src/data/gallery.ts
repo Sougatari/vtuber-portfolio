@@ -14,8 +14,8 @@ export const galleryItems: IGalleryItem[] = [
    {
      id: "art-001",
      title: "Character Name",
-     image: "public/images/art/full.webp",
-     thumbnail: "public/images/art/full.webp",
+     image: "images/art/full.webp",
+     thumbnail: "images/art/full.webp",
      category: "fullBody",
      alt: "Full body illustration of Character Name",
      description: "Commission for @client — Full body VTuber art with PSD",

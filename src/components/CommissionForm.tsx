@@ -53,9 +53,20 @@ export default function CommissionForm() {
     }
 
     setSubmitStatus('loading');
+
+    // Build FormData from all form fields (text, selects, checkboxes, etc.)
     const formData = new FormData(form);
 
+    // The file input is CSS-hidden and its value may not match the React state
+    // after manual removals. Remove whatever the DOM added and re-append from state.
+    formData.delete('reference_images');
+    selectedFiles.forEach((file) => {
+      formData.append('reference_images', file, file.name);
+    });
+
     try {
+      // Do NOT set Content-Type manually — let the browser set it with the
+      // correct multipart boundary so FormSubmit can parse the file attachments.
       const response = await fetch("https://formsubmit.co/ajax/779pablochambi@gmail.com", {
         method: "POST",
         body: formData,
@@ -335,7 +346,7 @@ export default function CommissionForm() {
           <input
             ref={fileInputRef}
             type="file"
-            name="attachment"
+            name="reference_images"
             multiple
             accept="image/png,image/jpeg,image/webp"
             onChange={handleFileChange}
@@ -589,7 +600,7 @@ export default function CommissionForm() {
           disabled={submitStatus === 'loading'}
         >
           <Send size={18} className={submitStatus === 'loading' ? 'animate-pulse' : ''} />
-          {submitStatus === 'loading' ? 'Sending...' : 'Submit Commission Request'}
+          {submitStatus === 'loading' ? 'Sending...' : <NoTranslate>Submit Commission Request</NoTranslate>}
         </Button>
       </div>
     </form>

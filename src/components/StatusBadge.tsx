@@ -1,5 +1,6 @@
 import { siteConfig } from '../data/config';
 import type { CommissionStatus } from '../types';
+import NoTranslate from './NoTranslate';
 
 interface StatusBadgeProps {
   status?: CommissionStatus;
@@ -25,7 +26,7 @@ export default function StatusBadge({ status, className = '' }: StatusBadgeProps
           isOpen ? 'bg-green-400 animate-pulse' : 'bg-red-400'
         }`}
       />
-      Commissions {currentStatus}
+      <NoTranslate>Commissions</NoTranslate>{' '}{currentStatus}
     </div>
   );
 }

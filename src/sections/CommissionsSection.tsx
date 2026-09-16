@@ -11,8 +11,8 @@ import { siteConfig } from '../data/config';
 type ServiceTab = 'art' | 'rigging' | 'fullModel';
 
 const tabs: { id: ServiceTab; label: React.ReactNode }[] = [
-  { id: 'art', label: <><NoTranslate>Art</NoTranslate> + <NoTranslate>PSD</NoTranslate></> },
-  { id: 'rigging', label: <><NoTranslate>Live2D</NoTranslate> <NoTranslate>Rigging</NoTranslate></> },
+  { id: 'art', label: <><NoTranslate>Art</NoTranslate>{' '}+{' '}<NoTranslate>PSD</NoTranslate></> },
+  { id: 'rigging', label: <><NoTranslate>Live2D</NoTranslate>{' '}<NoTranslate>Rigging</NoTranslate></> },
   { id: 'fullModel', label: <>Full Model</> },
 ];
 
@@ -67,7 +67,7 @@ export default function CommissionsSection() {
             {artPricing.extras.length > 0 && (
               <div className="max-w-2xl mx-auto">
                 <h4 className="text-lg font-heading font-semibold text-cream-50 mb-4 text-center">
-                  <NoTranslate>Art</NoTranslate> / <NoTranslate>PSD</NoTranslate> Extras
+                  <NoTranslate>Art</NoTranslate>{' '}/{' '}<NoTranslate>PSD</NoTranslate>{' '}Extras
                 </h4>
                 <div className="space-y-2">
                   {artPricing.extras.map((extra) => (
@@ -102,7 +102,7 @@ export default function CommissionsSection() {
             <div className="max-w-3xl mx-auto mb-12">
               <div className="bg-charcoal-800 rounded-2xl p-8 border border-charcoal-700">
                 <h4 className="text-lg font-heading font-semibold text-cream-50 mb-4">
-                  <NoTranslate>Rigging</NoTranslate> Package Includes
+                  <NoTranslate>Rigging</NoTranslate>{' '}Package Includes
                 </h4>
                 <p className="text-cream-200 mb-6">{riggingPricing.description}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -136,7 +136,7 @@ export default function CommissionsSection() {
             {riggingPricing.extras.length > 0 && (
               <div className="max-w-2xl mx-auto">
                 <h4 className="text-lg font-heading font-semibold text-cream-50 mb-4 text-center">
-                  <NoTranslate>Rigging</NoTranslate> Extras
+                  <NoTranslate>Rigging</NoTranslate>{' '}Extras
                 </h4>
                 <div className="space-y-2">
                   {riggingPricing.extras.map((extra) => (
@@ -156,8 +156,8 @@ export default function CommissionsSection() {
                 Full Model — Art + Rigging
               </h3>
               <p className="text-cream-200 max-w-2xl mx-auto">
-                Get the complete package: custom <NoTranslate>VTuber</NoTranslate> art with prepared <NoTranslate>PSD</NoTranslate> and
-                professional <NoTranslate>Live2D</NoTranslate> rigging, all in one commission.
+                Get the complete package: custom{' '}<NoTranslate>VTuber</NoTranslate>{' '}art with prepared{' '}<NoTranslate>PSD</NoTranslate>{' '}and
+                professional{' '}<NoTranslate>Live2D</NoTranslate>{' '}rigging, all in one commission.
               </p>
             </div>
 

@@ -10,7 +10,7 @@ export default function ExtraItem({ extra }: ExtraItemProps) {
       <div className="flex items-center gap-3">
         {extra.image && (
           <img
-            src={extra.image}
+            src={`${import.meta.env.BASE_URL}${extra.image}`}
             alt={extra.name}
             className="w-8 h-8 rounded object-cover"
             loading="lazy"

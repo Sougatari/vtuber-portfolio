@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <StatusBadge className="text-xs" />
             <Button variant="primary" size="sm" href="#commission-request">
-              Commission Me
+              <NoTranslate>Commission Me</NoTranslate>
             </Button>
           </div>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
             <div className="mt-3 px-4 flex flex-col gap-3">
               <StatusBadge />
               <Button variant="primary" size="md" href="#commission-request" onClick={handleNavClick}>
-                Commission Me
+                <NoTranslate>Commission Me</NoTranslate>
               </Button>
             </div>
           </div>

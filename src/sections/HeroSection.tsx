@@ -52,7 +52,7 @@ export default function HeroSection() {
 
         {/* Tagline */}
         <p className="text-xl sm:text-2xl md:text-3xl font-heading text-cream-200 tracking-wide mb-2">
-          <NoTranslate>VTuber</NoTranslate> Artist & <NoTranslate>Live2D</NoTranslate> Rigger
+          <NoTranslate>VTuber</NoTranslate>{' '}Artist &{' '}<NoTranslate>Live2D</NoTranslate>{' '}Rigger
         </p>
 
         {/* Ornamental bottom frame */}
@@ -69,7 +69,7 @@ export default function HeroSection() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button variant="primary" size="lg" href="#commission-request">
-            Request a Commission
+            <NoTranslate>Request a Commission</NoTranslate>
           </Button>
           <Button variant="secondary" size="lg" href="#commissions">
             Explore Portfolio

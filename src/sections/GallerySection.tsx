@@ -35,7 +35,7 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Gallery"
-          subtitle={<>A selection of my work — <NoTranslate>VTuber</NoTranslate> art and <NoTranslate>Live2D</NoTranslate> rigging showcases.</>}
+          subtitle={<>A selection of my work —{' '}<NoTranslate>VTuber</NoTranslate>{' '}art and{' '}<NoTranslate>Live2D</NoTranslate>{' '}rigging showcases.</>}
         />
 
         {/* Art / Live2D toggle */}
@@ -59,7 +59,7 @@ export default function GallerySection() {
                   : 'text-cream-200 hover:text-cream-50'
               }`}
             >
-              <NoTranslate>Live2D</NoTranslate> Showcases
+              <NoTranslate>Live2D</NoTranslate>{' '}Showcases
             </button>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function GallerySection() {
                     className="group relative aspect-[3/4] rounded-xl overflow-hidden bg-charcoal-800 cursor-pointer focus-visible:outline-2 focus-visible:outline-gold-500 focus-visible:outline-offset-2"
                   >
                     <img
-                      src={item.thumbnail || item.image}
+                      src={`${import.meta.env.BASE_URL}${item.thumbnail || item.image}`}
                       alt={item.alt}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
@@ -135,7 +135,7 @@ export default function GallerySection() {
             ) : (
               <div className="text-center py-20">
                 <p className="text-cream-300 text-lg">
-                  <NoTranslate>Live2D</NoTranslate> showcases coming soon. Stay tuned!
+                  <NoTranslate>Live2D</NoTranslate>{' '}showcases coming soon. Stay tuned!
                 </p>
               </div>
             )}

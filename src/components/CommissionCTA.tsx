@@ -1,5 +1,6 @@
 import { Send } from 'lucide-react';
 import { siteConfig } from '../data/config';
+import NoTranslate from './NoTranslate';
 
 export default function CommissionCTA() {
   const isOpen = siteConfig.commissionStatus === 'OPEN';
@@ -30,7 +31,7 @@ export default function CommissionCTA() {
       aria-label={isOpen ? 'Request a Commission' : 'Join Waitlist'}
     >
       <span className="hidden sm:inline font-semibold text-sm tracking-wide">
-        {isOpen ? 'Commission Me' : 'Waitlist'}
+        {isOpen ? <NoTranslate>Commission Me</NoTranslate> : 'Waitlist'}
       </span>
       <Send
         size={18}

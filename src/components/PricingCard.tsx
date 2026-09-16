@@ -13,11 +13,11 @@ export default function PricingCard({ option, onImageClick }: PricingCardProps) 
       <div className="relative aspect-[3/4] overflow-hidden bg-charcoal-900">
         {option.image ? (
           <img
-            src={option.image}
+            src={`${import.meta.env.BASE_URL}${option.image}`}
             alt={`${option.label} example`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer"
             loading="lazy"
-            onClick={() => onImageClick?.(option.image, `${option.label} example`)}
+            onClick={() => onImageClick?.(`${import.meta.env.BASE_URL}${option.image}`, `${option.label} example`)}
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-charcoal-600">

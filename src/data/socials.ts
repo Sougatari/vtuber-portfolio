@@ -43,5 +43,5 @@ export const aboutData: IAboutData = {
     "My goal is to help VTubers stand out with unique, professionally crafted models that capture their personality and vision.",
   ],
   // ⚠️ EDIT_ME: Add path to your avatar image
-  avatar: "/images/ui/avatar.webp",
+  avatar: "images/ui/avatar.webp",
 };

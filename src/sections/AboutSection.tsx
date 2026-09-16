@@ -29,7 +29,7 @@ export default function AboutSection() {
             <div className="shrink-0">
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-gold-500/30 bg-charcoal-800">
                 <img
-                  src={aboutData.avatar}
+                  src={`${import.meta.env.BASE_URL}${aboutData.avatar}`}
                   alt={`${aboutData.heading} avatar`}
                   className="w-full h-full object-cover"
                   loading="lazy"

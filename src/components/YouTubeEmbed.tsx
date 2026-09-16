@@ -14,9 +14,13 @@ export default function YouTubeEmbed({ showcase }: YouTubeEmbedProps) {
   const videoId = extractYouTubeId(showcase.youtubeId);
 
   // Use custom thumbnail, or auto-generate from YouTube
-  const posterUrl =
+  const rawThumbnail =
     showcase.thumbnail ||
     (videoId ? getYouTubeThumbnail(videoId, 'hqdefault') : '');
+  // Prefix local paths with BASE_URL; leave absolute URLs (http/https) unchanged
+  const posterUrl = rawThumbnail && !rawThumbnail.startsWith('http')
+    ? `${import.meta.env.BASE_URL}${rawThumbnail}`
+    : rawThumbnail;
 
   // If ID extraction fails, show error state
   if (!videoId) {

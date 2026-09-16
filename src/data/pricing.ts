@@ -15,7 +15,7 @@ export const artPricing: IArtPricing = {
       size: "bust",
       label: "Bust",
       price: 12, // ⚠️ EDIT_ME: Set your bust art price
-      image: "/images/pricing/art-bust.webp",
+      image: "images/pricing/art-bust.webp",
       description:
         "Head and shoulders illustration, perfect for a focused VTuber model.",
       includes: [
@@ -28,7 +28,7 @@ export const artPricing: IArtPricing = {
       size: "halfBody",
       label: "Half Body",
       price: 12, // ⚠️ EDIT_ME: Set your half body art price
-      image: "/images/pricing/art-halfbody.webp",
+      image: "images/pricing/art-halfbody.webp",
       description:
         "Waist-up illustration showing more of your character's design and outfit.",
       includes: [
@@ -41,7 +41,7 @@ export const artPricing: IArtPricing = {
       size: "fullBody",
       label: "Full Body",
       price: 13, // ⚠️ EDIT_ME: Set your full body art price
-      image: "/images/pricing/art-fullbody.webp",
+      image: "images/pricing/art-fullbody.webp",
       description:
         "Complete character illustration from head to toe with full outfit details.",
       includes: [
@@ -96,7 +96,7 @@ export const riggingPricing: IRiggingPricing = {
       size: "bust",
       label: "Bust",
       price: 1, // ⚠️ EDIT_ME: Set your bust rigging price
-      image: "/images/pricing/rig-bust.webp",
+      image: "images/pricing/rig-bust.webp",
       description: "Bust-level Live2D rigging with all included features.",
       includes: [
         "Full rigging package features",
@@ -108,7 +108,7 @@ export const riggingPricing: IRiggingPricing = {
       size: "halfBody",
       label: "Half Body",
       price: 2, // ⚠️ EDIT_ME: Set your half body rigging price
-      image: "/images/pricing/rig-halfbody.webp",
+      image: "images/pricing/rig-halfbody.webp",
       description:
         "Half body Live2D rigging with all included features plus torso movement.",
       includes: [
@@ -121,7 +121,7 @@ export const riggingPricing: IRiggingPricing = {
       size: "fullBody",
       label: "Full Body",
       price: 3, // ⚠️ EDIT_ME: Set your full body rigging price
-      image: "/images/pricing/rig-fullbody.webp",
+      image: "images/pricing/rig-fullbody.webp",
       description:
         "Full body Live2D rigging with complete movement range and physics.",
       includes: [

@@ -81,7 +81,7 @@ export default function Lightbox({
           {/* Image */}
           <motion.img
             key={current.image}
-            src={current.image}
+            src={`${import.meta.env.BASE_URL}${current.image}`}
             alt={current.alt}
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
