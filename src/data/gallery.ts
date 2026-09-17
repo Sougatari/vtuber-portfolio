@@ -11,15 +11,34 @@ import type { IGalleryItem, IShowcase } from "../types";
 
 export const galleryItems: IGalleryItem[] = [
   // ⚠️ EDIT_ME: Add your gallery items below
-   {
-     id: "art-001",
-     title: "Character Name",
-     image: "images/art/full.webp",
-     thumbnail: "images/art/full.webp",
-     category: "fullBody",
-     alt: "Full body illustration of Character Name",
-     description: "Commission for @client — Full body VTuber art with PSD",
-   },
+  {
+    id: "art-002",
+    title: "Character Name",
+    image: "images/art/aea.webp",
+    thumbnail: "images/art/aea.webp",
+    category: "fullBody",
+    alt: "Full body illustration of Character Name",
+    description: "Commission for @client — Full body VTuber art with PSD",
+    isWide: true,
+  },
+  {
+    id: "art-003",
+    title: "Character Name",
+    image: "images/art/ee.webp",
+    thumbnail: "images/art/ee.webp",
+    category: "fullBody",
+    alt: "Full body illustration of Character Name",
+    description: "Commission for @client — Full body VTuber art with PSD",
+  },
+  {
+    id: "art-001",
+    title: "Character Name",
+    image: "images/art/full.webp",
+    thumbnail: "images/art/full.webp",
+    category: "fullBody",
+    alt: "Full body illustration of Character Name",
+    description: "Commission for @client — Full body VTuber art with PSD",
+  },
 ];
 
 // All available gallery filter categories
@@ -49,11 +68,11 @@ export const galleryCategories = [
 export const showcaseItems: IShowcase[] = [
   // ⚠️ EDIT_ME: Add your YouTube showcase videos below
   // Example:
-   {
-     id: "showcase-001",
-     title: "Character Name — Live2D Showcase",
-     youtubeId: "https://youtu.be/vCpT4wCoPhU?si=2Ri8VY4R2Um8tUBt",
-     description: "Full body rigging showcase with physics and expressions.",
-     features: ["Full body movement", "Hair physics", "3 expressions"],
-   },
+  {
+    id: "showcase-001",
+    title: "Character Name — Live2D Showcase",
+    youtubeId: "https://youtu.be/vCpT4wCoPhU?si=2Ri8VY4R2Um8tUBt",
+    description: "Full body rigging showcase with physics and expressions.",
+    features: ["Full body movement", "Hair physics", "3 expressions"],
+  },
 ];

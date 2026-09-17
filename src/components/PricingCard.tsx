@@ -8,14 +8,14 @@ interface PricingCardProps {
 
 export default function PricingCard({ option, onImageClick }: PricingCardProps) {
   return (
-    <div className="group relative bg-charcoal-800 rounded-2xl overflow-hidden border border-charcoal-700 hover:border-gold-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/5">
+    <div className="group relative flex flex-col bg-charcoal-800 rounded-2xl overflow-hidden border border-charcoal-700 hover:border-gold-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/5">
       {/* Image */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-charcoal-900">
+      <div className="relative h-[400px] overflow-hidden bg-transparent">
         {option.image ? (
           <img
             src={`${import.meta.env.BASE_URL}${option.image}`}
             alt={`${option.label} example`}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer"
+            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 cursor-pointer"
             loading="lazy"
             onClick={() => onImageClick?.(`${import.meta.env.BASE_URL}${option.image}`, `${option.label} example`)}
           />
@@ -37,7 +37,7 @@ export default function PricingCard({ option, onImageClick }: PricingCardProps) 
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         {/* Price */}
         <div className="mb-4">
           <span className="text-3xl font-heading font-bold text-gradient-gold">

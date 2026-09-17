@@ -14,8 +14,8 @@ export const artPricing: IArtPricing = {
     {
       size: "bust",
       label: "Bust",
-      price: 12, // ⚠️ EDIT_ME: Set your bust art price
-      image: "images/pricing/art-bust.webp",
+      price: 20, // ⚠️ EDIT_ME: Set your bust art price
+      image: "images/pricing/modelo3.webp",
       description:
         "Head and shoulders illustration, perfect for a focused VTuber model.",
       includes: [
@@ -27,8 +27,8 @@ export const artPricing: IArtPricing = {
     {
       size: "halfBody",
       label: "Half Body",
-      price: 12, // ⚠️ EDIT_ME: Set your half body art price
-      image: "images/pricing/art-halfbody.webp",
+      price: 25, // ⚠️ EDIT_ME: Set your half body art price
+      image: "images/pricing/modelo2.webp",
       description:
         "Waist-up illustration showing more of your character's design and outfit.",
       includes: [
@@ -40,8 +40,8 @@ export const artPricing: IArtPricing = {
     {
       size: "fullBody",
       label: "Full Body",
-      price: 13, // ⚠️ EDIT_ME: Set your full body art price
-      image: "images/pricing/art-fullbody.webp",
+      price: 30, // ⚠️ EDIT_ME: Set your full body art price
+      image: "images/pricing/modelo1.webp",
       description:
         "Complete character illustration from head to toe with full outfit details.",
       includes: [
@@ -55,31 +55,31 @@ export const artPricing: IArtPricing = {
     {
       id: "art-extra-expression",
       name: "Extra Expression",
-      price: 14, // ⚠️ EDIT_ME
+      price: 3, // ⚠️ EDIT_ME
       description: "Additional facial expression for your character.",
     },
     {
       id: "art-extra-arm",
       name: "Extra Arm / Hand Pose",
-      price: 15, // ⚠️ EDIT_ME
+      price: 3, // ⚠️ EDIT_ME
       description: "Additional arm or hand position.",
     },
     {
       id: "art-extra-hairstyle",
       name: "Extra Hairstyle",
-      price: 15, // ⚠️ EDIT_ME
+      price: 10, // ⚠️ EDIT_ME
       description: "Additional hairstyle variant for your character.",
     },
     {
       id: "art-extra-outfit",
       name: "Extra Outfit",
-      price: 15, // ⚠️ EDIT_ME
+      price: 10, // ⚠️ EDIT_ME
       description: "Additional outfit design.",
     },
     {
       id: "art-extra-accessory",
       name: "Extra Accessory",
-      price: 0, // ⚠️ EDIT_ME
+      price: 5, // ⚠️ EDIT_ME
       description: "Additional accessory item for your character.",
     },
   ],
@@ -95,11 +95,11 @@ export const riggingPricing: IRiggingPricing = {
     {
       size: "bust",
       label: "Bust",
-      price: 1, // ⚠️ EDIT_ME: Set your bust rigging price
-      image: "images/pricing/rig-bust.webp",
+      price: 20, // ⚠️ EDIT_ME: Set your bust rigging price
+      image: "images/pricing/modelo3.webp",
       description: "Bust-level Live2D rigging with all included features.",
       includes: [
-        "Full rigging package features",
+        "Full rigg package features",
         "VTube Studio ready (.moc3)",
         "Testing & adjustments",
       ],
@@ -107,12 +107,12 @@ export const riggingPricing: IRiggingPricing = {
     {
       size: "halfBody",
       label: "Half Body",
-      price: 2, // ⚠️ EDIT_ME: Set your half body rigging price
-      image: "images/pricing/rig-halfbody.webp",
+      price: 25, // ⚠️ EDIT_ME: Set your half body rigging price
+      image: "images/pricing/modelo2.webp",
       description:
         "Half body Live2D rigging with all included features plus torso movement.",
       includes: [
-        "Full rigging package features",
+        "Full rigg package features",
         "VTube Studio ready (.moc3)",
         "Testing & adjustments",
       ],
@@ -120,20 +120,20 @@ export const riggingPricing: IRiggingPricing = {
     {
       size: "fullBody",
       label: "Full Body",
-      price: 3, // ⚠️ EDIT_ME: Set your full body rigging price
-      image: "images/pricing/rig-fullbody.webp",
+      price: 30, // ⚠️ EDIT_ME: Set your full body rigging price
+      image: "images/pricing/modelo1.webp",
       description:
         "Full body Live2D rigging with complete movement range and physics.",
       includes: [
-        "Full rigging package features",
+        "Full rigg package features",
         "VTube Studio ready (.moc3)",
         "Testing & adjustments",
       ],
     },
   ],
   features: [
-    { name: "Head X / Y / Z", included: true },
-    { name: "Body movement", included: true },
+    { name: "Head X / Y / Z (45-degree turns)", included: true },
+    { name: "Basic expressions: sad, happy, blushing", included: true },
     { name: "Eye tracking", included: true },
     { name: "Blinking", included: true },
     { name: "Mouth movement", included: true },
@@ -142,37 +142,31 @@ export const riggingPricing: IRiggingPricing = {
     { name: "Clothing physics", included: true },
     { name: "Accessory physics", included: true },
     { name: "General physics", included: true },
-    { name: "Expressions / toggles", included: true },
+    { name: "Body movement", included: true },
     { name: "VTube Studio compatibility", included: true },
   ],
   extras: [
     {
       id: "rig-extra-expression",
-      name: "Additional Expression",
-      price: 0, // ⚠️ EDIT_ME
-      description: "Extra expression toggle for your Live2D model.",
-    },
-    {
-      id: "rig-extra-physics",
-      name: "Additional Physics",
-      price: 0, // ⚠️ EDIT_ME
-      description: "Extra physics setup for additional elements.",
+      name: "Rig of activatables without physics",
+      price: 3, // ⚠️ EDIT_ME
+      description: "Extra expression switches, hand poses, hats, masks.",
     },
     {
       id: "rig-extra-animation",
       name: "Special Animation",
-      price: 0, // ⚠️ EDIT_ME
-      description: "Custom animation or special movement.",
+      price: 10, // ⚠️ EDIT_ME
+      description: "Custom animation or special movement.(transformations)",
     },
     {
       id: "rig-extra-accessory",
-      name: "Additional Accessory",
-      price: 0, // ⚠️ EDIT_ME
-      description: "Extra accessory rigging with physics.",
+      name: "Additional Accessory with physics",
+      price: 5, // ⚠️ EDIT_ME
+      description: "Extra accessory rigging with physics.(hairstyles, wings, tails)",
     },
     {
       id: "rig-extra-custom",
-      name: "Other Custom Rigging Work",
+      name: "Other Custom Rigg Work",
       price: 0, // ⚠️ EDIT_ME
       description: "Custom rigging request — contact for details.",
     },

@@ -20,13 +20,13 @@ export const artProcess: IProcessWorkflow = {
     },
     {
       number: 3,
-      title: "50% Payment",
-      description: "You pay the first 50% via our supported platforms (PayPal, Takenos, VGen, etc.) to begin work on your commission.",
+      title: "Sketch",
+      description: "I create the initial sketch based on your brief and references.",
     },
     {
       number: 4,
-      title: "Sketch",
-      description: "I create the initial sketch based on your brief and references.",
+      title: "50% Payment",
+      description: "You pay the first 50% via our supported platforms (PayPal, Takenos, VGen, etc.) to begin work on your commission.",
     },
     {
       number: 5,
@@ -81,7 +81,7 @@ export const riggingProcess: IProcessWorkflow = {
     },
     {
       number: 5,
-      title: "Rigging",
+      title: "Rigg",
       description: "Your model is rigged according to the selected package features.",
     },
     {

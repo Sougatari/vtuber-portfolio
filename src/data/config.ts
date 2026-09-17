@@ -26,14 +26,14 @@ export const siteConfig: ISiteConfig = {
   contactEmail: import.meta.env.VITE_CONTACT_EMAIL || "779pablochambi@gmail.com",
 
   // Supported payment methods to display globally
-  paymentMethods: ["PayPal", "Takenos (Credit/Debit Card)", "VGen", "Ko-fi"],
+  paymentMethods: ["PayPal", "Takenos (Credit/Debit Card)", "Ko-fi"],
 };
 
 // Navigation items — matches Blueprint Section 1
 export const navItems: INavItem[] = [
   { label: "Home", href: "#home" },
-  { label: "Commissions", href: "#commissions" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Commissions", href: "#commissions" },
   { label: "Process", href: "#process" },
   { label: "TOS", href: "#tos" },
   { label: "FAQ", href: "#faq" },

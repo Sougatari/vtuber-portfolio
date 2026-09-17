@@ -77,6 +77,8 @@ export interface IGalleryItem {
   category: GalleryCategory;
   alt: string;
   description?: string;
+  /** Mark true for wide/horizontal images — they will span 2 columns in the grid */
+  isWide?: boolean;
 }
 
 export interface IShowcase {

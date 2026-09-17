@@ -84,34 +84,31 @@ export default function GallerySection() {
               ))}
             </div>
 
-            {/* Grid */}
+            {/* Dense grid — wide items span 2 cols × 2 rows */}
             {filteredItems.length > 0 ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {filteredItems.map((item, index) => (
-                  <button
-                    key={item.id}
-                    onClick={() => openLightbox(index)}
-                    className="group relative aspect-[3/4] rounded-xl overflow-hidden bg-charcoal-800 cursor-pointer focus-visible:outline-2 focus-visible:outline-gold-500 focus-visible:outline-offset-2"
-                  >
-                    <img
-                      src={`${import.meta.env.BASE_URL}${item.thumbnail || item.image}`}
-                      alt={item.alt}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <p className="text-cream-50 text-sm font-medium truncate">
-                        {item.title}
-                      </p>
-                      {item.description && (
-                        <p className="text-cream-300 text-xs truncate mt-0.5">
-                          {item.description}
-                        </p>
-                      )}
-                    </div>
-                  </button>
-                ))}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 grid-flow-dense">
+                {filteredItems.map((item, index) => {
+                  const isWide = item.isWide === true;
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => openLightbox(index)}
+                      className={[
+                        'overflow-hidden rounded-xl cursor-pointer focus-visible:outline-2 focus-visible:outline-gold-500 focus-visible:outline-offset-2',
+                        isWide
+                          ? 'col-span-2 row-span-2 min-h-[320px]'
+                          : 'min-h-[160px]',
+                      ].join(' ')}
+                    >
+                      <img
+                        src={`${import.meta.env.BASE_URL}${item.image}`}
+                        alt={item.alt}
+                        className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                        loading="lazy"
+                      />
+                    </button>
+                  );
+                })}
               </div>
             ) : (
               <div className="text-center py-20">

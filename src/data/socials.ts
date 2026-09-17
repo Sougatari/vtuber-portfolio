@@ -17,20 +17,26 @@ export const socialLinks: ISocialLink[] = [
   {
     platform: "vgen",
     label: "VGen",
-    url: "https://vgen.co/EDIT_ME",
+    url: "https://vgen.co/pablito",
     icon: "palette",
   },
   {
     platform: "kofi",
     label: "Ko-fi",
-    url: "https://ko-fi.com/EDIT_ME",
+    url: "https://ko-fi.com/sougatari",
     icon: "coffee",
   },
   {
     platform: "youtube",
     label: "YouTube",
-    url: "https://youtube.com/@EDIT_ME",
+    url: "https://www.youtube.com/@sougatari",
     icon: "youtube",
+  },
+  {
+    platform: "tiktok",
+    label: "Tiktok",
+    url: "https://www.tiktok.com/@sougatari",
+    icon: "tiktok",
   },
 ];
 
@@ -38,10 +44,10 @@ export const aboutData: IAboutData = {
   heading: "About Me",
   // ⚠️ EDIT_ME: Replace with your actual bio paragraphs
   paragraphs: [
-    "Hi! I'm a VTuber artist and Live2D rigger specializing in bringing original characters to life.",
-    "I create high-quality character illustrations with layered PSD files specifically prepared for Live2D, and I rig them with smooth, expressive movements ready for VTube Studio.",
-    "My goal is to help VTubers stand out with unique, professionally crafted models that capture their personality and vision.",
+    "Hi! I'm a VTuber artist, Live2D rigger, programmer, 2D animator, and pianist who loves Japanese culture",
+    "I am currently just a systems engineering student, but I give my all in every project or task so I can keep improving in what I love",
+    "My goal is to leave a mark in the Vtuber industry with some big project and be the next Spanish-speaking Hololive",
   ],
   // ⚠️ EDIT_ME: Add path to your avatar image
-  avatar: "images/ui/avatar.webp",
+  avatar: "images/ui/perfil.webp",
 };

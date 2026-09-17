@@ -17,8 +17,8 @@ export default function App() {
 
       <main>
         <HeroSection />
-        <CommissionsSection />
         <GallerySection />
+        <CommissionsSection />
         <ProcessSection />
         <TOSSection />
         <FAQSection />

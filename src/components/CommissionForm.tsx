@@ -1,9 +1,17 @@
 import { useState, useRef } from 'react';
-import { Send, CheckCircle, AlertCircle, Upload, X, Image, Link } from 'lucide-react';
+import { Send, CheckCircle, AlertCircle, Upload, X, Image, Link, AtSign, Coffee, Palette, CirclePlay, ExternalLink } from 'lucide-react';
 import { siteConfig } from '../data/config';
 import { artPricing, riggingPricing } from '../data/pricing';
+import { socialLinks } from '../data/socials';
 import Button from '../components/Button';
 import NoTranslate from '../components/NoTranslate';
+
+const socialIconMap: Record<string, React.ElementType> = {
+  twitter: AtSign,
+  coffee: Coffee,
+  palette: Palette,
+  youtube: CirclePlay,
+};
 
 export default function CommissionForm() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -49,7 +57,7 @@ export default function CommissionForm() {
     // Let the browser handle native validation first
     if (!form.checkValidity()) {
       form.reportValidity();
-      return; 
+      return;
     }
 
     setSubmitStatus('loading');
@@ -98,11 +106,31 @@ export default function CommissionForm() {
       <div className="text-center py-12">
         <CheckCircle size={48} className="mx-auto text-success mb-4" />
         <h3 className="text-2xl font-heading font-semibold text-cream-50 mb-2">
-          Thank you for your request!
+          Commission Request Sent!
         </h3>
         <p className="text-cream-200 max-w-md mx-auto">
-          Your commission details and attachments have been received successfully. I will review your project and get back to you via your provided contact info shortly.
+          Thank you! I have received your request and reference images. Please make sure to contact me or follow me on my social media so we can stay in touch easily while I review your project.
         </p>
+
+        {/* Social media links */}
+        <div className="flex flex-wrap justify-center gap-3 mt-6">
+          {socialLinks.map((social) => {
+            const IconComponent = socialIconMap[social.icon] || ExternalLink;
+            return (
+              <a
+                key={social.platform}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-charcoal-800 border border-charcoal-700 text-cream-100 hover:border-gold-500/40 hover:text-gold-400 transition-colors text-sm font-medium"
+              >
+                <IconComponent size={18} />
+                {social.label}
+              </a>
+            );
+          })}
+        </div>
+
         <Button
           variant="secondary"
           className="mt-6"
@@ -174,7 +202,7 @@ export default function CommissionForm() {
             placeholder="Your name or alias"
           />
           <p className="text-charcoal-600 text-xs mt-1">
-            How should I address you in our conversation.
+            How should I address you in our conversation (You'll go out with this name in the show_case).
           </p>
         </div>
 
@@ -285,7 +313,8 @@ export default function CommissionForm() {
             required
             rows={4}
             className="w-full px-4 py-3 rounded-lg bg-charcoal-800 border border-charcoal-700 text-cream-100 placeholder-charcoal-600 focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/30 transition-colors resize-y"
-            placeholder="Describe your character's appearance, personality, and key features..."
+            placeholder="Describe your character's appearance, personality, and key features... This is very useful for me regarding the shapes of his mouth"
+
           />
           <p className="text-charcoal-600 text-xs mt-1">
             The more detail you provide, the more accurate the initial sketch will be.
@@ -394,7 +423,7 @@ export default function CommissionForm() {
         <div>
           <label htmlFor="cf-refLinks" className="block text-sm text-cream-200 mb-1.5 flex items-center gap-1.5">
             <Link size={14} className="text-charcoal-600" />
-            Reference Links
+            Reference Links or reviews of .PSD
             <span className="ml-1 text-xs px-2 py-0.5 rounded-full bg-charcoal-700/50 text-cream-300 border border-charcoal-600/30">
               Optional
             </span>
@@ -482,7 +511,7 @@ export default function CommissionForm() {
           {/* Deadline */}
           <div>
             <label htmlFor="cf-deadline" className="block text-sm text-cream-200 mb-1.5">
-              Desired Deadline
+              Desired Deadline (Starting from 3 weeks)
               <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-charcoal-700/50 text-cream-300 border border-charcoal-600/30">
                 Optional
               </span>
