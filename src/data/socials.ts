@@ -32,12 +32,6 @@ export const socialLinks: ISocialLink[] = [
     url: "https://www.youtube.com/@sougatari",
     icon: "youtube",
   },
-  {
-    platform: "tiktok",
-    label: "Tiktok",
-    url: "https://www.tiktok.com/@sougatari",
-    icon: "tiktok",
-  },
 ];
 
 export const aboutData: IAboutData = {
