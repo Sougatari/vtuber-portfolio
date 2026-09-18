@@ -38,7 +38,7 @@ export const aboutData: IAboutData = {
   heading: "About Me",
   // ⚠️ EDIT_ME: Replace with your actual bio paragraphs
   paragraphs: [
-    "Hi! I'm a VTuber artist, Live2D rigger, programmer, 2D animator, and pianist who loves Japanese culture",
+    "Hi! I'm a VTuber artist, Live2D rigger, programmer, 2D animator, pianist and who loves Japanese culture",
     "I am currently just a systems engineering student, but I give my all in every project or task so I can keep improving in what I love",
     "My goal is to leave a mark in the Vtuber industry with some big project and be the next Spanish-speaking Hololive",
   ],
