@@ -196,12 +196,12 @@ export const galleryItems: IGalleryItem[] = [
 
 // All available gallery filter categories
 export const galleryCategories = [
-  { id: "all", label: "All" },
-  { id: "fullBody", label: "Full Body" },
-  { id: "halfBody", label: "Half Body" },
-  { id: "bust", label: "Bust" },
-  { id: "expressions", label: "Expressions" },
-  { id: "other", label: "Other" },
+  { id: "all", labelKey: "gallery.categories.all" },
+  { id: "fullBody", labelKey: "gallery.categories.fullBody" },
+  { id: "halfBody", labelKey: "gallery.categories.halfBody" },
+  { id: "bust", labelKey: "gallery.categories.bust" },
+  { id: "expressions", labelKey: "gallery.categories.expressions" },
+  { id: "other", labelKey: "gallery.categories.other" },
 ] as const;
 
 // ============================================================
@@ -234,5 +234,12 @@ export const showcaseItems: IShowcase[] = [
     youtubeId: "https://youtu.be/xP0ZITQJJa4?si=DHTqh-my0BxKtaMX",
     description: "Full body rigging showcase with physics and expressions.",
     features: ["Full body movement", "Hair physics", "More than 5 expressions"],
+  },
+  {
+    id: "showcase-003",
+    title: "Kim Noriega — Live2D Showcase",
+    youtubeId: "https://youtu.be/BvjcIBFgxT4?si=Ynw4O2RpA2XTPBG9",
+    description: "Full body rigging showcase with physics and expressions.",
+    features: ["Full body movement", "Hair physics", "More than 3 expressions", "1 Pet"],
   },
 ];

@@ -1,0 +1,589 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "gallery": "Galería",
+    "commissions": "Comisiones",
+    "process": "Proceso",
+    "tos": "TOS",
+    "faq": "FAQ",
+    "about": "Sobre mí"
+  },
+  "hero": {
+    "tagline": "Artista VTuber & Live2D Rigger",
+    "requestCommission": "Solicitar Comisión",
+    "explorePortfolio": "Explorar Portafolio",
+    "scrollDown": "Bajar al contenido"
+  },
+  "status": {
+    "commissionsOpen": "Comisiones OPEN",
+    "commissionsClosed": "Comisiones CLOSED",
+    "open": "OPEN",
+    "closed": "CLOSED"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Una selección de mi trabajo — arte VTuber y Showcases de Live2D Rigging.",
+    "artTab": "Arte",
+    "live2dTab": "Live2D Showcases",
+    "categories": {
+      "all": "Todo",
+      "fullBody": "Cuerpo Completo",
+      "halfBody": "Half Body",
+      "bust": "Busto",
+      "expressions": "Expresiones",
+      "other": "Otros"
+    },
+    "emptyArt": "Imágenes de la galería próximamente. ¡Estate atento!",
+    "emptyLive2d": "Showcases de Live2D próximamente. ¡Estate atento!"
+  },
+  "commissions": {
+    "title": "Comisiones",
+    "subtitle": "Elige el servicio que se adapte a tu proyecto. Todos los precios están en USD.",
+    "tabs": {
+      "art": "Arte + PSD",
+      "rigging": "Live2D Rigging",
+      "fullModel": "Modelo Completo"
+    },
+    "artExtrasTitle": "Extras de Arte / PSD",
+    "riggingExtrasTitle": "Extras de Rigging",
+    "riggingPackageIncludes": "Paquete de Rigging Incluye",
+    "fullModelTitle": "Modelo Completo — Arte + Rigging",
+    "fullModelSubtitle": "Obtén el paquete completo: arte VTuber personalizado con PSD preparado y Live2D Rigging profesional, todo en una sola comisión.",
+    "fullModelExtrasNote": "Opciones adicionales disponibles en los extras de Arte y Rigging.",
+    "paymentMethodsLabel": "Métodos de pago aceptados:",
+    "usd": "USD",
+    "tbd": "A consultar"
+  },
+  "pricing": {
+    "art": {
+      "title": "Arte VTuber + Preparación PSD",
+      "subtitle": "Ilustración VTuber personalizada con archivo PSD en capas preparado para Live2D Rigging.",
+      "bust": {
+        "label": "Busto",
+        "description": "Ilustración de cabeza y hombros, perfecta para un modelo VTuber enfocado.",
+        "includes": [
+          "Ilustración en alta resolución",
+          "PSD en capas preparado para Live2D",
+          "Hasta 2 revisiones en etapa de boceto"
+        ]
+      },
+      "halfBody": {
+        "label": "Half Body",
+        "description": "Ilustración hasta la cintura mostrando más del diseño y outfit de tu personaje.",
+        "includes": [
+          "Ilustración en alta resolución",
+          "PSD en capas preparado para Live2D",
+          "Hasta 2 revisiones en etapa de boceto"
+        ]
+      },
+      "fullBody": {
+        "label": "Cuerpo Completo",
+        "description": "Ilustración completa del personaje de cabeza a pies con todos los detalles del outfit.",
+        "includes": [
+          "Ilustración en alta resolución",
+          "PSD en capas preparado para Live2D",
+          "Hasta 2 revisiones en etapa de boceto"
+        ]
+      },
+      "extras": {
+        "expression": {
+          "name": "Expresión Extra",
+          "description": "Expresión facial adicional para tu personaje."
+        },
+        "arm": {
+          "name": "Pose de Brazo / Mano Extra",
+          "description": "Posición adicional de brazo o mano."
+        },
+        "hairstyle": {
+          "name": "Peinado Extra",
+          "description": "Variante de peinado adicional para tu personaje."
+        },
+        "outfit": {
+          "name": "Outfit Extra",
+          "description": "Diseño de outfit adicional."
+        },
+        "accessory": {
+          "name": "Accesorio Extra",
+          "description": "Accesorio adicional para tu personaje."
+        }
+      }
+    },
+    "rigging": {
+      "title": "Live2D Rigging",
+      "subtitle": "Live2D Rigging profesional para tu PSD preparado. Un paquete completo.",
+      "description": "Servicio completo de Live2D Rigging. Tú proporcionas un archivo PSD correctamente preparado y separado, y yo doy vida a tu personaje con movimientos suaves y expresivos.",
+      "bust": {
+        "label": "Busto",
+        "description": "Live2D Rigging a nivel busto con todas las características incluidas.",
+        "includes": [
+          "Características del paquete completo de Rigging",
+          "Listo para VTube Studio (.moc3)",
+          "Pruebas y ajustes"
+        ]
+      },
+      "halfBody": {
+        "label": "Half Body",
+        "description": "Live2D Rigging Half Body con todas las características incluidas más movimiento de torso.",
+        "includes": [
+          "Características del paquete completo de Rigging",
+          "Listo para VTube Studio (.moc3)",
+          "Pruebas y ajustes"
+        ]
+      },
+      "fullBody": {
+        "label": "Cuerpo Completo",
+        "description": "Live2D Rigging de cuerpo completo con rango de movimiento completo y físicas.",
+        "includes": [
+          "Características del paquete completo de Rigging",
+          "Listo para VTube Studio (.moc3)",
+          "Pruebas y ajustes"
+        ]
+      },
+      "features": {
+        "headXYZ": "Cabeza X / Y / Z (giros de 45 grados)",
+        "expressions": "Expresiones básicas: triste, feliz, ruborizándose",
+        "eyeTracking": "Seguimiento de ojos",
+        "blinking": "Parpadeo",
+        "mouthMovement": "Movimiento de boca",
+        "breathing": "Respiración",
+        "hairPhysics": "Físicas de cabello",
+        "clothingPhysics": "Físicas de ropa",
+        "accessoryPhysics": "Físicas de accesorios",
+        "generalPhysics": "Físicas generales",
+        "bodyMovement": "Movimiento corporal",
+        "vtubeStudioCompatibility": "Compatibilidad con VTube Studio"
+      },
+      "extras": {
+        "expression": {
+          "name": "Rigging de activables sin físicas",
+          "description": "Interruptores de expresión extra, poses de manos, sombreros, máscaras."
+        },
+        "animation": {
+          "name": "Animación Especial",
+          "description": "Animación personalizada o movimiento especial. (transformaciones)"
+        },
+        "accessory": {
+          "name": "Accesorio Adicional con físicas",
+          "description": "Rigging de accesorio extra con físicas. (peinados, alas, colas)"
+        },
+        "custom": {
+          "name": "Otro Trabajo de Rigging Personalizado",
+          "description": "Solicitud de Rigging personalizado — contactar para detalles."
+        }
+      }
+    }
+  },
+  "process": {
+    "title": "Proceso",
+    "subtitle": "Una visión clara de cómo trabajamos juntos de principio a fin.",
+    "artTab": "Arte + PSD",
+    "riggingTab": "Live2D Rigging",
+    "communicationNote": "Durante el proceso, mantendremos contacto para que pueda compartir avances y hacer las revisiones o modificaciones incluidas según los términos de la comisión.",
+    "art": {
+      "title": "Arte + Preparación PSD",
+      "steps": {
+        "1": {
+          "title": "Solicitud de Comisión",
+          "description": "Envías el formulario con los detalles de tu personaje, referencias y requisitos."
+        },
+        "2": {
+          "title": "Cotización",
+          "description": "Reviso tu solicitud, evalúo la complejidad y confirmo el precio final."
+        },
+        "3": {
+          "title": "Boceto",
+          "description": "Creo el boceto inicial basado en tu brief y referencias."
+        },
+        "4": {
+          "title": "50% de Pago",
+          "description": "Pagas el primer 50% a través de nuestras plataformas soportadas (PayPal, Takenos, VGen, etc.) para comenzar a trabajar en tu comisión."
+        },
+        "5": {
+          "title": "Línea + Color",
+          "description": "La ilustración se desarrolla con líneas limpias y coloración completa."
+        },
+        "6": {
+          "title": "Preparación PSD",
+          "description": "La obra se separa en capas y se organiza para Live2D Rigging."
+        },
+        "7": {
+          "title": "Revisión Final",
+          "description": "Revisas el resultado final y solicitas las revisiones incluidas."
+        },
+        "8": {
+          "title": "50% Restante",
+          "description": "El saldo restante se paga a través de la plataforma acordada antes de la entrega final."
+        },
+        "9": {
+          "title": "Entrega",
+          "description": "Los archivos finales en alta resolución y el PSD en capas se te entregan."
+        }
+      }
+    },
+    "rigging": {
+      "title": "Live2D Rigging",
+      "steps": {
+        "1": {
+          "title": "Solicitud de Comisión",
+          "description": "Envías el formulario con tus requisitos de Rigging."
+        },
+        "2": {
+          "title": "Revisión del PSD",
+          "description": "Verifico si tu PSD es adecuado para el Rigging solicitado."
+        },
+        "3": {
+          "title": "Cotización",
+          "description": "Confirmo el precio final basado en el PSD y los requisitos."
+        },
+        "4": {
+          "title": "50% de Pago",
+          "description": "Pagas el primer 50% a través de nuestras plataformas soportadas (PayPal, Takenos, VGen, etc.) para comenzar a trabajar."
+        },
+        "5": {
+          "title": "Rigging",
+          "description": "Tu modelo es riggeado según las características del paquete seleccionado."
+        },
+        "6": {
+          "title": "Muestras de Progreso",
+          "description": "Comparto avances y muestras de progreso durante el desarrollo."
+        },
+        "7": {
+          "title": "Revisiones",
+          "description": "Revisas el trabajo y solicitas los cambios incluidos."
+        },
+        "8": {
+          "title": "50% Restante",
+          "description": "El saldo restante se paga a través de la plataforma acordada antes de la entrega final."
+        },
+        "9": {
+          "title": "Entrega",
+          "description": "El archivo .moc3 final y los recursos relacionados se entregan, listos para VTube Studio."
+        }
+      }
+    }
+  },
+  "tos": {
+    "title": "Términos de Servicio",
+    "subtitle": "Por favor, revisa todos los términos antes de solicitar una comisión.",
+    "items": {
+      "tos01": {
+        "title": "Aceptación de Comisiones",
+        "content": "Enviar una solicitud de comisión no garantiza la aceptación. Me reservo el derecho de aceptar o rechazar cualquier comisión."
+      },
+      "tos02": {
+        "title": "Alcance de la Comisión",
+        "content": "El precio final, características incluidas, entregables, revisiones y tiempo estimado de finalización se acordarán antes de comenzar el trabajo. Las solicitudes fuera del alcance acordado pueden requerir un cargo adicional."
+      },
+      "tos03": {
+        "title": "Pago",
+        "content": "Todas las comisiones utilizan una estructura de pago 50/50: 50% por adelantado antes de comenzar el trabajo. 50% del saldo restante antes de la entrega final. No comenzaré a trabajar hasta que se haya recibido el pago inicial."
+      },
+      "tos04": {
+        "title": "Métodos de Pago",
+        "content": "Los métodos de pago disponibles se confirmarán durante el proceso de comisión. Pueden aplicarse tarifas de procesamiento de pagos o conversión de divisas según la plataforma seleccionada."
+      },
+      "tos05": {
+        "title": "Cotizaciones",
+        "content": "Los precios mostrados son precios base. La cotización final puede cambiar según la complejidad del personaje, características adicionales, uso comercial, plazo u otro trabajo solicitado."
+      },
+      "tos06": {
+        "title": "Revisiones",
+        "content": "Las revisiones están limitadas a la cantidad y etapas acordadas para la comisión. Los cambios menores dentro del alcance acordado están incluidos. Los cambios importantes, rediseños o solicitudes que requieran rehacer sustancialmente el trabajo ya aprobado pueden incurrir en un cargo adicional."
+      },
+      "tos07": {
+        "title": "Aprobación del Trabajo",
+        "content": "Una vez que se ha aprobado una etapa, puedo proceder a la siguiente. Los cambios solicitados después de la aprobación pueden tratarse como revisiones adicionales y pueden incurrir en costos adicionales."
+      },
+      "tos08": {
+        "title": "Reembolsos",
+        "content": "Una vez completada y aprobada la etapa de boceto acordada, los pagos no son reembolsables. Si se solicita una cancelación antes de ese punto, cualquier posible reembolso dependerá de la cantidad de trabajo ya completado y se discutirá individualmente."
+      },
+      "tos09": {
+        "title": "Cancelación",
+        "content": "Cualquiera de las partes puede solicitar la cancelación. Si el cliente cancela después de que el trabajo haya comenzado, el pago por el trabajo completado no es reembolsable. Si debo cancelar la comisión, comunicaré la situación y proporcionaré un reembolso apropiado por el trabajo que no se ha completado."
+      },
+      "tos10": {
+        "title": "Plazos",
+        "content": "Las fechas de entrega son estimaciones a menos que se haya acordado explícitamente un plazo específico. Los tiempos de finalización pueden cambiar debido a la complejidad del proyecto, revisiones, carga de trabajo, tiempo de respuesta del cliente o circunstancias imprevistas."
+      },
+      "tos11": {
+        "title": "Comisiones Urgentes",
+        "content": "Las comisiones urgentes pueden aceptarse según disponibilidad. Puede aplicarse un cargo adicional."
+      },
+      "tos12": {
+        "title": "Responsabilidades del Cliente",
+        "content": "El cliente es responsable de proporcionar referencias precisas, archivos, instrucciones, comentarios y aprobaciones necesarias para completar la comisión."
+      },
+      "tos13": {
+        "title": "Retrasos del Cliente",
+        "content": "Los retrasos causados por información faltante, archivos, comentarios o aprobaciones del cliente pueden extender el tiempo de entrega estimado. Los períodos prolongados sin comunicación pueden resultar en la pausa de la comisión."
+      },
+      "tos14": {
+        "title": "Trabajo Adicional",
+        "content": "Las solicitudes que no estaban incluidas en el alcance original de la comisión pueden cotizarse por separado antes de que comience el trabajo adicional."
+      },
+      "tos15": {
+        "title": "Uso Comercial",
+        "content": "El uso previsto del trabajo comisionado debe divulgarse durante el proceso de comisión. Los derechos de uso comercial y cualquier tarifa de licencia adicional se acordarán antes de comenzar el trabajo."
+      },
+      "tos16": {
+        "title": "Derechos de Autor",
+        "content": "Retengo la autoría y los derechos de autor de mi obra artística original y trabajo de Rigging a menos que un acuerdo escrito separado indique lo contrario. La compra de una comisión no constituye una transferencia de propiedad de derechos de autor."
+      },
+      "tos17": {
+        "title": "Derechos de Uso del Cliente",
+        "content": "El cliente recibe los derechos de uso acordados para su comisión. A menos que se acuerde explícitamente lo contrario, el cliente no puede revender, redistribuir, reclamar autoría o transferir los archivos originales comisionados como su propio trabajo."
+      },
+      "tos18": {
+        "title": "Derechos de Portafolio",
+        "content": "A menos que se haya acordado una comisión privada de antemano, puedo mostrar el trabajo completado y material apropiado de trabajo en progreso en mi: Portafolio, Sitio web, Redes sociales, YouTube, Material promocional."
+      },
+      "tos19": {
+        "title": "Comisiones Privadas",
+        "content": "Si el cliente requiere que la comisión permanezca privada, esto debe discutirse y acordarse antes de que comience la comisión. Pueden aplicarse cargos adicionales según las circunstancias."
+      },
+      "tos20": {
+        "title": "Crédito al Artista",
+        "content": "Se anima a los clientes a acreditarme cuando muestren públicamente el trabajo comisionado. Cualquier requisito de crédito específico se comunicará durante el proceso de comisión."
+      },
+      "tos21": {
+        "title": "Política de IA",
+        "content": "Mi obra artística comisionada, archivos PSD, archivos de Rigging y demás trabajo original no pueden usarse para: Entrenamiento de IA, Creación de datasets, Entrenamiento de aprendizaje automático, Generación de imágenes con IA, Desarrollo de modelos de IA, Propósitos similares relacionados con IA, a menos que haya dado permiso escrito explícito."
+      },
+      "tos22": {
+        "title": "Contracargos y Disputas de Pago",
+        "content": "Los clientes deben contactarme directamente para resolver problemas de pago o comisión antes de iniciar un contracargo o disputa de pago. Los contracargos no autorizados pueden ser contestados utilizando los registros de comisión, registros de pago y los Términos de Servicio acordados."
+      },
+      "tos23": {
+        "title": "Entrega de Archivos",
+        "content": "Los archivos finales se entregarán digitalmente a través del método de entrega acordado. El cliente es responsable de descargar y almacenar de forma segura sus archivos después de la entrega."
+      },
+      "tos24": {
+        "title": "Almacenamiento de Archivos",
+        "content": "Es posible que no retenga permanentemente los archivos de comisión completados indefinidamente. Los clientes son responsables de mantener sus propias copias de seguridad de los archivos entregados."
+      },
+      "tos25": {
+        "title": "Limitaciones Técnicas",
+        "content": "El resultado final puede verse afectado por limitaciones técnicas, archivos proporcionados por el cliente, limitaciones de software o requisitos fuera del alcance acordado. Cualquier limitación técnica significativa descubierta durante el proyecto se comunicará al cliente."
+      },
+      "tos26": {
+        "title": "Software de Terceros",
+        "content": "La funcionalidad de los modelos comisionados puede depender de software de terceros como VTube Studio o Live2D Cubism. No puedo garantizar compatibilidad permanente con versiones futuras o cambios realizados por desarrolladores de software de terceros."
+      },
+      "tos27": {
+        "title": "Acuerdo",
+        "content": "Al proceder con el pago, el cliente confirma que ha leído, entendido y aceptado estos Términos de Servicio. Cualquier excepción o modificación a estos términos debe acordarse por escrito antes de que comience el trabajo relevante."
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Preguntas frecuentes sobre comisiones y servicios.",
+    "items": {
+      "faq01": {
+        "question": "¿Qué servicios ofreces?",
+        "answer": "Ofrezco Arte VTuber + Preparación PSD, Live2D Rigging, y un paquete de Modelo Completo que combina ambos servicios."
+      },
+      "faq02": {
+        "question": "¿Puedo encargar solo la obra artística?",
+        "answer": "Sí. El servicio de Arte + Preparación PSD incluye la ilustración y un PSD en capas preparado específicamente para Live2D Rigging."
+      },
+      "faq03": {
+        "question": "¿Puedo encargar solo el Rigging?",
+        "answer": "Sí. Puedes proporcionar tu propio PSD listo para Live2D y encargarme solo el Rigging. Revisaré el PSD antes de confirmar el precio final."
+      },
+      "faq04": {
+        "question": "¿Aceptas archivos PSD existentes para Rigging?",
+        "answer": "Sí, siempre que el PSD esté correctamente separado y contenga las capas necesarias para el Rigging. Revisaré tu archivo antes de aceptar la comisión. La separación adicional o las correcciones artísticas pueden requerir un cargo extra."
+      },
+      "faq05": {
+        "question": "¿Qué incluye tu Rigging?",
+        "answer": "Mi Rigging se ofrece como un paquete, con las características incluidas listadas en la sección de Rigging de mi portafolio. Las características adicionales o más complejas pueden requerir un cargo extra."
+      },
+      "faq06": {
+        "question": "¿Cuánto cuesta una comisión?",
+        "answer": "Los precios dependen del tamaño del cuerpo, el servicio y la complejidad del modelo. Puedes encontrar los precios iniciales en la sección de Comisiones. Para diseños más complejos, proporcionaré una cotización final después de revisar tus referencias."
+      },
+      "faq07": {
+        "question": "¿Cómo funciona el pago?",
+        "answer": "Utilizo un sistema de pago 50/50. El primer 50% se requiere antes de comenzar a trabajar, y el 50% restante debe pagarse antes de que se entreguen los archivos finales."
+      },
+      "faq08": {
+        "question": "¿Puedo solicitar cambios durante la comisión?",
+        "answer": "Sí. Tendrás oportunidades de revisar el trabajo durante el proceso. El número y tipo de revisiones incluidas dependen de la etapa y el servicio. Los cambios importantes solicitados después de la aprobación pueden requerir un cargo adicional."
+      },
+      "faq09": {
+        "question": "¿Cuánto tiempo tarda una comisión?",
+        "answer": "El tiempo de entrega depende de la complejidad del modelo, el servicio seleccionado y la cola de comisiones actual. Proporcionaré un plazo estimado cuando se confirme tu comisión."
+      },
+      "faq10": {
+        "question": "¿Aceptas uso comercial?",
+        "answer": "Sí. El uso comercial está disponible según mis Términos de Servicio. Por favor, menciona tu uso previsto al enviar tu solicitud de comisión para que pueda incluirlo en la cotización si es necesario."
+      },
+      "faq11": {
+        "question": "¿Puedo usar el modelo para streaming y contenido monetizado?",
+        "answer": "Sí, siempre que tu comisión incluya los derechos de uso comercial apropiados. Por favor, especifica tu uso previsto al solicitar una comisión."
+      },
+      "faq12": {
+        "question": "¿Puedo solicitar una comisión urgente?",
+        "answer": "Las comisiones urgentes pueden aceptarse dependiendo de mi carga de trabajo actual. Puede aplicarse un cargo adicional. Por favor, contáctame con tu fecha límite antes de hacer una solicitud."
+      },
+      "faq13": {
+        "question": "¿Qué pasa si necesito cancelar mi comisión?",
+        "answer": "Las condiciones de cancelación y reembolso dependen de cuánto ha avanzado la comisión. Por favor, lee mis Términos de Servicio antes de encargar."
+      },
+      "faq14": {
+        "question": "¿Puedes mantener mi comisión privada?",
+        "answer": "Sí, si ofreces una opción de comisión privada. Esto debe acordarse explícitamente antes de que comience el trabajo, ya que de lo contrario el trabajo completado puede usarse en mi portafolio y contenido promocional."
+      },
+      "faq15": {
+        "question": "¿Qué archivos recibiré?",
+        "answer": "Para Arte + Preparación PSD, recibirás la obra final y el PSD en capas preparado para Live2D. Para Rigging, recibirás los archivos de Rigging completados y los archivos necesarios para su uso en la configuración acordada."
+      },
+      "faq16": {
+        "question": "¿Me ayudarás a configurar el modelo en VTube Studio?",
+        "answer": "Puedo proporcionar orientación básica para importar y usar el modelo en VTube Studio. La solución técnica completa fuera del modelo entregado puede no estar incluida."
+      },
+      "faq17": {
+        "question": "¿Cómo solicito una comisión?",
+        "answer": "Usa el botón «Solicitar Comisión» y completa el formulario con las referencias de tu personaje, el servicio deseado, fecha límite, presupuesto y otra información relevante. Revisaré tu solicitud y me pondré en contacto contigo con los siguientes pasos."
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "¡Hola! Soy un artista VTuber, Live2D Rigger, programador, animador 2D, pianista y alguien que ama la cultura japonesa.",
+    "paragraph2": "Actualmente soy solo un estudiante de ingeniería de sistemas, pero doy todo en cada proyecto o tarea para seguir mejorando en lo que amo.",
+    "paragraph3": "Mi objetivo es dejar huella en la industria VTuber con algún gran proyecto y ser el próximo Hololive de habla hispana."
+  },
+  "form": {
+    "title": "Solicitar una Comisión",
+    "subtitle": "Completa el formulario con los detalles de tu proyecto. Revisaré tu solicitud y te responderé con una cotización.",
+    "contactInfo": "Información de Contacto",
+    "name": {
+      "label": "Nombre / Alias",
+      "placeholder": "Tu nombre o alias",
+      "helper": "Cómo debo dirigirme a ti en nuestra conversación (Saldrás con este nombre en el Showcase)."
+    },
+    "email": {
+      "label": "Email",
+      "helper": "Enviaré cotizaciones, actualizaciones y entregas finales a esta dirección."
+    },
+    "social": {
+      "label": "Social / Discord",
+      "optional": "Opcional",
+      "placeholder": "Tag de Discord o usuario de red social",
+      "helper": "Contacto alternativo si prefieres mensajería en tiempo real."
+    },
+    "service": {
+      "legend": "Servicio",
+      "label": "Seleccionar Servicio",
+      "placeholder": "Elige un servicio...",
+      "helper": "Determina el alcance y el precio de tu comisión.",
+      "options": {
+        "artPsd": "Arte + Preparación PSD",
+        "rigging": "Live2D Rigging",
+        "fullModel": "Modelo Completo — Arte + Rigging"
+      }
+    },
+    "bodySize": {
+      "label": "Tamaño de Cuerpo Deseado",
+      "placeholder": "Elige un tamaño...",
+      "helper": "Afecta la cobertura de la ilustración y la complejidad del Rigging.",
+      "options": {
+        "bust": "Busto",
+        "halfBody": "Half Body",
+        "fullBody": "Cuerpo Completo"
+      }
+    },
+    "characterDetails": "Detalles del Personaje",
+    "characterDescription": {
+      "label": "Descripción del Personaje",
+      "placeholder": "Describe la apariencia, personalidad y rasgos clave de tu personaje... Esto es muy útil para las formas de su boca.",
+      "helper": "Cuantos más detalles proporciones, más preciso será el boceto inicial."
+    },
+    "complexity": {
+      "label": "Complejidad",
+      "optional": "Opcional",
+      "placeholder": "¿Diseño simple, moderado o complejo?",
+      "helper": "Ayuda a estimar el tiempo y precio de tu comisión."
+    },
+    "visualReferences": "Referencias Visuales",
+    "referenceImages": {
+      "label": "Imágenes de Referencia",
+      "optional": "Opcional",
+      "uploadClick": "Haz clic para subir imágenes de referencia",
+      "uploadFormats": "PNG, JPG, WEBP — se permiten varios archivos",
+      "helper": "Los mood boards, hojas de personaje o referencias de poses me ayudan a entender tu visión.",
+      "removeAlt": "Eliminar referencia {{index}}"
+    },
+    "referenceLinks": {
+      "label": "Links de Referencia o reseñas del .PSD",
+      "optional": "Opcional",
+      "placeholder": "Pega links de Google Drive / Imgur / Pinterest si tus archivos son muy grandes",
+      "helper": "O pega un link de Google Drive / Imgur / Pinterest si tus archivos son muy grandes."
+    },
+    "extras": {
+      "legend": "Extras",
+      "optional": "Opcional",
+      "helper": "Selecciona los complementos que deseas incluir con tu comisión.",
+      "customLabel": "Otros extras específicos o solicitudes personalizadas",
+      "customPlaceholder": "Describe cualquier característica extra que necesites..."
+    },
+    "projectDetails": "Detalles del Proyecto",
+    "deadline": {
+      "label": "Fecha Límite Deseada (A partir de 3 semanas)",
+      "optional": "Opcional",
+      "placeholder": "Ej: Sin prisa, 2 meses"
+    },
+    "budget": {
+      "label": "Presupuesto Aproximado",
+      "optional": "Opcional",
+      "placeholder": "Rango o cantidad en USD",
+      "helper": "Me ayuda a adaptar el alcance a tu presupuesto."
+    },
+    "usage": {
+      "label": "Uso",
+      "placeholder": "Elige tipo de uso...",
+      "helper": "El uso comercial puede afectar la licencia y el precio.",
+      "options": {
+        "personal": "Uso Personal",
+        "commercial": "Uso Comercial"
+      }
+    },
+    "additionalDetails": {
+      "label": "Detalles Adicionales",
+      "optional": "Opcional",
+      "placeholder": "Cualquier otra cosa que quieras mencionar sobre tu proyecto..."
+    },
+    "tosAgreement": "He leído y acepto los",
+    "tosLink": "Términos de Servicio",
+    "paymentMethods": "Métodos de pago aceptados",
+    "submit": "Enviar Solicitud de Comisión",
+    "sending": "Enviando...",
+    "closedMessage_waitlist": "Las comisiones están cerradas actualmente. Sigue mis redes para anuncios sobre cuándo vuelven a abrir.",
+    "error": "Algo salió mal. Por favor inténtalo de nuevo o contáctame por redes sociales.",
+    "required": "*"
+  },
+  "success": {
+    "title": "¡Solicitud de Comisión Enviada!",
+    "message": "¡Gracias! He recibido tu solicitud e imágenes de referencia. Asegúrate de contactarme o seguirme en mis redes sociales para que podamos mantenernos en contacto fácilmente mientras reviso tu proyecto.",
+    "sendAnother": "Enviar Otra Solicitud"
+  },
+  "footer": {
+    "madeWith": "Hecho con"
+  },
+  "cta": {
+    "commissionMe": "Comisionarme",
+    "waitlist": "Lista de espera"
+  },
+  "common": {
+    "usd": "USD",
+    "tbd": "A consultar",
+    "optional": "Opcional",
+    "required": "*",
+    "imageComingSoon": "Imagen próximamente",
+    "size": "Tamaño",
+    "fullPackage": "Paquete Completo"
+  }
+}

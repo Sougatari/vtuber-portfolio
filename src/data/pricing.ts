@@ -7,168 +7,160 @@ import type { IArtPricing, IRiggingPricing } from "../types";
 // ============================================================
 
 export const artPricing: IArtPricing = {
-  title: "VTuber Art + PSD Preparation",
-  subtitle:
-    "Custom VTuber illustration with layered PSD file prepared for Live2D rigging.",
+  title: "pricing.art.title",
+  subtitle: "pricing.art.subtitle",
   options: [
     {
       size: "bust",
-      label: "Bust",
+      label: "pricing.art.bust.label",
       price: 20, // ⚠️ EDIT_ME: Set your bust art price
       image: "images/pricing/modelo3.webp",
-      description:
-        "Head and shoulders illustration, perfect for a focused VTuber model.",
+      description: "pricing.art.bust.description",
       includes: [
-        "High-resolution illustration",
-        "Layered PSD prepared for Live2D",
-        "Up to 2 revisions at sketch stage",
+        "pricing.art.bust.includes.0",
+        "pricing.art.bust.includes.1",
+        "pricing.art.bust.includes.2",
       ],
     },
     {
       size: "halfBody",
-      label: "Half Body",
+      label: "pricing.art.halfBody.label",
       price: 25, // ⚠️ EDIT_ME: Set your half body art price
       image: "images/pricing/modelo2.webp",
-      description:
-        "Waist-up illustration showing more of your character's design and outfit.",
+      description: "pricing.art.halfBody.description",
       includes: [
-        "High-resolution illustration",
-        "Layered PSD prepared for Live2D",
-        "Up to 2 revisions at sketch stage",
+        "pricing.art.halfBody.includes.0",
+        "pricing.art.halfBody.includes.1",
+        "pricing.art.halfBody.includes.2",
       ],
     },
     {
       size: "fullBody",
-      label: "Full Body",
+      label: "pricing.art.fullBody.label",
       price: 30, // ⚠️ EDIT_ME: Set your full body art price
       image: "images/pricing/modelo1.webp",
-      description:
-        "Complete character illustration from head to toe with full outfit details.",
+      description: "pricing.art.fullBody.description",
       includes: [
-        "High-resolution illustration",
-        "Layered PSD prepared for Live2D",
-        "Up to 2 revisions at sketch stage",
+        "pricing.art.fullBody.includes.0",
+        "pricing.art.fullBody.includes.1",
+        "pricing.art.fullBody.includes.2",
       ],
     },
   ],
   extras: [
     {
       id: "art-extra-expression",
-      name: "Extra Expression",
+      name: "pricing.art.extras.expression.name",
       price: 3, // ⚠️ EDIT_ME
-      description: "Additional facial expression for your character.",
+      description: "pricing.art.extras.expression.description",
     },
     {
       id: "art-extra-arm",
-      name: "Extra Arm / Hand Pose",
+      name: "pricing.art.extras.arm.name",
       price: 3, // ⚠️ EDIT_ME
-      description: "Additional arm or hand position.",
+      description: "pricing.art.extras.arm.description",
     },
     {
       id: "art-extra-hairstyle",
-      name: "Extra Hairstyle",
+      name: "pricing.art.extras.hairstyle.name",
       price: 10, // ⚠️ EDIT_ME
-      description: "Additional hairstyle variant for your character.",
+      description: "pricing.art.extras.hairstyle.description",
     },
     {
       id: "art-extra-outfit",
-      name: "Extra Outfit",
+      name: "pricing.art.extras.outfit.name",
       price: 10, // ⚠️ EDIT_ME
-      description: "Additional outfit design.",
+      description: "pricing.art.extras.outfit.description",
     },
     {
       id: "art-extra-accessory",
-      name: "Extra Accessory",
+      name: "pricing.art.extras.accessory.name",
       price: 5, // ⚠️ EDIT_ME
-      description: "Additional accessory item for your character.",
+      description: "pricing.art.extras.accessory.description",
     },
   ],
 };
 
 export const riggingPricing: IRiggingPricing = {
-  title: "Live2D Rigging",
-  subtitle:
-    "Professional Live2D rigging for your prepared PSD. One comprehensive package.",
-  description:
-    "Full Live2D rigging service. You provide a properly prepared and separated PSD file, and I bring your character to life with smooth, expressive movements.",
+  title: "pricing.rigging.title",
+  subtitle: "pricing.rigging.subtitle",
+  description: "pricing.rigging.description",
   options: [
     {
       size: "bust",
-      label: "Bust",
+      label: "pricing.rigging.bust.label",
       price: 20, // ⚠️ EDIT_ME: Set your bust rigging price
       image: "images/pricing/modelo3.webp",
-      description: "Bust-level Live2D rigging with all included features.",
+      description: "pricing.rigging.bust.description",
       includes: [
-        "Full rigg package features",
-        "VTube Studio ready (.moc3)",
-        "Testing & adjustments",
+        "pricing.rigging.bust.includes.0",
+        "pricing.rigging.bust.includes.1",
+        "pricing.rigging.bust.includes.2",
       ],
     },
     {
       size: "halfBody",
-      label: "Half Body",
+      label: "pricing.rigging.halfBody.label",
       price: 25, // ⚠️ EDIT_ME: Set your half body rigging price
       image: "images/pricing/modelo2.webp",
-      description:
-        "Half body Live2D rigging with all included features plus torso movement.",
+      description: "pricing.rigging.halfBody.description",
       includes: [
-        "Full rigg package features",
-        "VTube Studio ready (.moc3)",
-        "Testing & adjustments",
+        "pricing.rigging.halfBody.includes.0",
+        "pricing.rigging.halfBody.includes.1",
+        "pricing.rigging.halfBody.includes.2",
       ],
     },
     {
       size: "fullBody",
-      label: "Full Body",
+      label: "pricing.rigging.fullBody.label",
       price: 30, // ⚠️ EDIT_ME: Set your full body rigging price
       image: "images/pricing/modelo1.webp",
-      description:
-        "Full body Live2D rigging with complete movement range and physics.",
+      description: "pricing.rigging.fullBody.description",
       includes: [
-        "Full rigg package features",
-        "VTube Studio ready (.moc3)",
-        "Testing & adjustments",
+        "pricing.rigging.fullBody.includes.0",
+        "pricing.rigging.fullBody.includes.1",
+        "pricing.rigging.fullBody.includes.2",
       ],
     },
   ],
   features: [
-    { name: "Head X / Y / Z (45-degree turns)", included: true },
-    { name: "Basic expressions: sad, happy, blushing", included: true },
-    { name: "Eye tracking", included: true },
-    { name: "Blinking", included: true },
-    { name: "Mouth movement", included: true },
-    { name: "Breathing", included: true },
-    { name: "Hair physics", included: true },
-    { name: "Clothing physics", included: true },
-    { name: "Accessory physics", included: true },
-    { name: "General physics", included: true },
-    { name: "Body movement", included: true },
-    { name: "VTube Studio compatibility", included: true },
+    { name: "pricing.rigging.features.headXYZ", included: true },
+    { name: "pricing.rigging.features.expressions", included: true },
+    { name: "pricing.rigging.features.eyeTracking", included: true },
+    { name: "pricing.rigging.features.blinking", included: true },
+    { name: "pricing.rigging.features.mouthMovement", included: true },
+    { name: "pricing.rigging.features.breathing", included: true },
+    { name: "pricing.rigging.features.hairPhysics", included: true },
+    { name: "pricing.rigging.features.clothingPhysics", included: true },
+    { name: "pricing.rigging.features.accessoryPhysics", included: true },
+    { name: "pricing.rigging.features.generalPhysics", included: true },
+    { name: "pricing.rigging.features.bodyMovement", included: true },
+    { name: "pricing.rigging.features.vtubeStudioCompatibility", included: true },
   ],
   extras: [
     {
       id: "rig-extra-expression",
-      name: "Rig of activatables without physics",
+      name: "pricing.rigging.extras.expression.name",
       price: 3, // ⚠️ EDIT_ME
-      description: "Extra expression switches, hand poses, hats, masks.",
+      description: "pricing.rigging.extras.expression.description",
     },
     {
       id: "rig-extra-animation",
-      name: "Special Animation",
+      name: "pricing.rigging.extras.animation.name",
       price: 10, // ⚠️ EDIT_ME
-      description: "Custom animation or special movement.(transformations)",
+      description: "pricing.rigging.extras.animation.description",
     },
     {
       id: "rig-extra-accessory",
-      name: "Additional Accessory with physics",
+      name: "pricing.rigging.extras.accessory.name",
       price: 5, // ⚠️ EDIT_ME
-      description: "Extra accessory rigging with physics.(hairstyles, wings, tails)",
+      description: "pricing.rigging.extras.accessory.description",
     },
     {
       id: "rig-extra-custom",
-      name: "Other Custom Rigg Work",
+      name: "pricing.rigging.extras.custom.name",
       price: 0, // ⚠️ EDIT_ME
-      description: "Custom rigging request — contact for details.",
+      description: "pricing.rigging.extras.custom.description",
     },
   ],
 };

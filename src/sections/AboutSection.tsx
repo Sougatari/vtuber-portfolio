@@ -6,6 +6,7 @@ import {
   ExternalLink,
   type LucideIcon,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { aboutData, socialLinks } from '../data/socials';
 import SectionHeading from '../components/SectionHeading';
 
@@ -18,10 +19,12 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function AboutSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="section-padding bg-charcoal-900/50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading title={aboutData.heading} />
+        <SectionHeading title={t(aboutData.heading)} />
 
         <div className="flex flex-col md:flex-row items-center gap-10">
           {/* Avatar */}
@@ -30,7 +33,7 @@ export default function AboutSection() {
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-gold-500/30 bg-charcoal-800">
                 <img
                   src={`${import.meta.env.BASE_URL}${aboutData.avatar}`}
-                  alt={`${aboutData.heading} avatar`}
+                  alt={`${t(aboutData.heading)} avatar`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                   onError={(e) => {
@@ -49,7 +52,7 @@ export default function AboutSection() {
                 key={i}
                 className="text-cream-200 leading-relaxed mb-4 last:mb-0"
               >
-                {paragraph}
+                {t(paragraph)}
               </p>
             ))}
 

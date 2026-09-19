@@ -1,14 +1,15 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { galleryItems, galleryCategories, showcaseItems } from '../data/gallery';
 import SectionHeading from '../components/SectionHeading';
 import Lightbox from '../components/Lightbox';
 import YouTubeEmbed from '../components/YouTubeEmbed';
-import NoTranslate from '../components/NoTranslate';
 import type { GalleryCategory } from '../types';
 
 type GalleryTab = 'art' | 'live2d';
 
 export default function GallerySection() {
+  const { t } = useTranslation();
   const [galleryTab, setGalleryTab] = useState<GalleryTab>('art');
   const [activeCategory, setActiveCategory] = useState<'all' | GalleryCategory>('all');
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -21,8 +22,8 @@ export default function GallerySection() {
 
   const lightboxImages = filteredItems.map((item) => ({
     image: item.image,
-    alt: item.alt,
-    title: item.title,
+    alt: t(item.alt),
+    title: t(item.title),
   }));
 
   const openLightbox = (index: number) => {
@@ -34,8 +35,8 @@ export default function GallerySection() {
     <section id="gallery" className="section-padding bg-charcoal-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Gallery"
-          subtitle={<>A selection of my work —{' '}<NoTranslate>VTuber</NoTranslate>{' '}art and{' '}<NoTranslate>Live2D</NoTranslate>{' '}rigging showcases.</>}
+          title={t('gallery.title')}
+          subtitle={t('gallery.subtitle')}
         />
 
         {/* Art / Live2D toggle */}
@@ -49,7 +50,7 @@ export default function GallerySection() {
                   : 'text-cream-200 hover:text-cream-50'
               }`}
             >
-              Art
+              {t('gallery.tabs.art')}
             </button>
             <button
               onClick={() => setGalleryTab('live2d')}
@@ -59,7 +60,7 @@ export default function GallerySection() {
                   : 'text-cream-200 hover:text-cream-50'
               }`}
             >
-              <NoTranslate>Live2D</NoTranslate>{' '}Showcases
+              {t('gallery.tabs.live2d')}
             </button>
           </div>
         </div>
@@ -79,7 +80,7 @@ export default function GallerySection() {
                       : 'bg-charcoal-800/50 text-cream-300 border border-charcoal-700/50 hover:border-charcoal-600'
                   }`}
                 >
-                  {cat.label}
+                  {t(cat.labelKey)}
                 </button>
               ))}
             </div>
@@ -102,7 +103,7 @@ export default function GallerySection() {
                     >
                       <img
                         src={`${import.meta.env.BASE_URL}${item.image}`}
-                        alt={item.alt}
+                        alt={t(item.alt)}
                         className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
                         loading="lazy"
                       />
@@ -113,7 +114,7 @@ export default function GallerySection() {
             ) : (
               <div className="text-center py-20">
                 <p className="text-cream-300 text-lg">
-                  Gallery items coming soon. Stay tuned!
+                  {t('gallery.comingSoon')}
                 </p>
               </div>
             )}
@@ -126,13 +127,13 @@ export default function GallerySection() {
             {showcaseItems.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {showcaseItems.map((showcase) => (
-                  <YouTubeEmbed key={showcase.id} showcase={showcase} />
+                  <YouTubeEmbed key={showcase.id} showcase={{ ...showcase, title: t(showcase.title), description: t(showcase.description) }} />
                 ))}
               </div>
             ) : (
               <div className="text-center py-20">
                 <p className="text-cream-300 text-lg">
-                  <NoTranslate>Live2D</NoTranslate>{' '}showcases coming soon. Stay tuned!
+                  {t('gallery.live2dComingSoon')}
                 </p>
               </div>
             )}

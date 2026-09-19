@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { IProcessStep } from '../types';
 
 interface ProcessTimelineProps {
@@ -5,6 +6,8 @@ interface ProcessTimelineProps {
 }
 
 export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="relative">
       {/* Vertical line */}
@@ -23,10 +26,10 @@ export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
             {/* Content */}
             <div className="pb-2 pt-1">
               <h4 className="text-cream-50 font-semibold text-base mb-1">
-                {step.title}
+                {t(step.titleKey)}
               </h4>
               <p className="text-cream-200 text-sm leading-relaxed">
-                {step.description}
+                {t(step.descriptionKey)}
               </p>
             </div>
           </div>

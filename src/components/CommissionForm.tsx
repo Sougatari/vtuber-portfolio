@@ -4,7 +4,6 @@ import { siteConfig } from '../data/config';
 import { artPricing, riggingPricing } from '../data/pricing';
 import { socialLinks } from '../data/socials';
 import Button from '../components/Button';
-import NoTranslate from '../components/NoTranslate';
 
 const socialIconMap: Record<string, React.ElementType> = {
   twitter: AtSign,
@@ -435,9 +434,7 @@ export default function CommissionForm() {
             className="w-full px-4 py-3 rounded-lg bg-charcoal-800 border border-charcoal-700 text-cream-100 placeholder-charcoal-600 focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/30 transition-colors resize-y"
             placeholder="Paste Google Drive / Imgur / Pinterest links if your files are too large"
           />
-          <p className="text-charcoal-600 text-xs mt-1">
-            Or paste a <NoTranslate>Google Drive</NoTranslate> / <NoTranslate>Imgur</NoTranslate> / <NoTranslate>Pinterest</NoTranslate> link if your files are too large.
-          </p>
+            Or paste a Google Drive / Imgur / Pinterest link if your files are too large.
         </div>
       </fieldset>
 
@@ -613,7 +610,7 @@ export default function CommissionForm() {
               key={method}
               className="px-2.5 py-1 rounded-md bg-charcoal-800/80 border border-charcoal-700 text-cream-200 text-[10px] font-medium"
             >
-              <NoTranslate>{method}</NoTranslate>
+              {method}
             </span>
           ))}
         </div>
@@ -629,7 +626,7 @@ export default function CommissionForm() {
           disabled={submitStatus === 'loading'}
         >
           <Send size={18} className={submitStatus === 'loading' ? 'animate-pulse' : ''} />
-          {submitStatus === 'loading' ? 'Sending...' : <NoTranslate>Submit Commission Request</NoTranslate>}
+          {submitStatus === 'loading' ? 'Sending...' : 'Submit Commission Request'}
         </Button>
       </div>
     </form>

@@ -31,11 +31,11 @@ export const siteConfig: ISiteConfig = {
 
 // Navigation items — matches Blueprint Section 1
 export const navItems: INavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Commissions", href: "#commissions" },
-  { label: "Process", href: "#process" },
-  { label: "TOS", href: "#tos" },
-  { label: "FAQ", href: "#faq" },
-  { label: "About", href: "#about" },
+  { labelKey: "nav.home", href: "#home" },
+  { labelKey: "nav.gallery", href: "#gallery" },
+  { labelKey: "nav.commissions", href: "#commissions" },
+  { labelKey: "nav.process", href: "#process" },
+  { labelKey: "nav.tos", href: "#tos" },
+  { labelKey: "nav.faq", href: "#faq" },
+  { labelKey: "nav.about", href: "#about" },
 ];

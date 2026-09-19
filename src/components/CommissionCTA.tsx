@@ -1,8 +1,9 @@
 import { Send } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { siteConfig } from '../data/config';
-import NoTranslate from './NoTranslate';
 
 export default function CommissionCTA() {
+  const { t } = useTranslation();
   const isOpen = siteConfig.commissionStatus === 'OPEN';
 
   // Don't show the floating CTA if commissions are closed and behavior is "disabled"
@@ -28,10 +29,10 @@ export default function CommissionCTA() {
       /* Mobile: compact circular */
       max-sm:p-3.5 max-sm:px-3.5
       `}
-      aria-label={isOpen ? 'Request a Commission' : 'Join Waitlist'}
+      aria-label={isOpen ? t('cta.commissionMe') : t('cta.waitlist')}
     >
       <span className="hidden sm:inline font-semibold text-sm tracking-wide">
-        {isOpen ? <NoTranslate>Commission Me</NoTranslate> : 'Waitlist'}
+        {isOpen ? t('cta.commissionMe') : t('cta.waitlist')}
       </span>
       <Send
         size={18}

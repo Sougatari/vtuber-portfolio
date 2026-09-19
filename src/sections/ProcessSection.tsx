@@ -1,21 +1,25 @@
 import { useState } from 'react';
 import { MessageCircle } from 'lucide-react';
-import { artProcess, riggingProcess, processCommunicationNote } from '../data/process';
+import { useTranslation } from 'react-i18next';
+import { processWorkflows } from '../data/process';
 import SectionHeading from '../components/SectionHeading';
 import ProcessTimeline from '../components/ProcessTimeline';
-import NoTranslate from '../components/NoTranslate';
 
 type ProcessTab = 'art' | 'rigging';
 
 export default function ProcessSection() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<ProcessTab>('art');
+
+  const artProcess = processWorkflows.find(p => p.id === 'art');
+  const riggingProcess = processWorkflows.find(p => p.id === 'rigging');
 
   return (
     <section id="process" className="section-padding bg-charcoal-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Process"
-          subtitle="A clear overview of how we work together from start to finish."
+          title={t('process.title')}
+          subtitle={t('process.subtitle')}
         />
 
         {/* Workflow toggle */}
@@ -29,7 +33,7 @@ export default function ProcessSection() {
                   : 'text-cream-200 hover:text-cream-50'
               }`}
             >
-              <NoTranslate>Art</NoTranslate> + <NoTranslate>PSD</NoTranslate>
+              {t('commissions.tabs.art')}
             </button>
             <button
               onClick={() => setActiveTab('rigging')}
@@ -39,25 +43,25 @@ export default function ProcessSection() {
                   : 'text-cream-200 hover:text-cream-50'
               }`}
             >
-              <NoTranslate>Live2D</NoTranslate> <NoTranslate>Rigging</NoTranslate>
+              {t('commissions.tabs.rigging')}
             </button>
           </div>
         </div>
 
         {/* Timeline */}
         <div className="mb-12">
-          {activeTab === 'art' && (
+          {activeTab === 'art' && artProcess && (
             <div>
               <h3 className="text-xl font-heading font-semibold text-cream-50 mb-6">
-                {artProcess.title}
+                {t(artProcess.titleKey)}
               </h3>
               <ProcessTimeline steps={artProcess.steps} />
             </div>
           )}
-          {activeTab === 'rigging' && (
+          {activeTab === 'rigging' && riggingProcess && (
             <div>
               <h3 className="text-xl font-heading font-semibold text-cream-50 mb-6">
-                {riggingProcess.title}
+                {t(riggingProcess.titleKey)}
               </h3>
               <ProcessTimeline steps={riggingProcess.steps} />
             </div>
@@ -68,7 +72,7 @@ export default function ProcessSection() {
         <div className="bg-charcoal-800/50 rounded-xl border border-gold-500/20 p-6 flex gap-4">
           <MessageCircle size={24} className="text-gold-500 shrink-0 mt-0.5" />
           <p className="text-cream-200 text-sm leading-relaxed italic">
-            {processCommunicationNote}
+            {t('process.communicationNote')}
           </p>
         </div>
       </div>

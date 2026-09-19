@@ -1,10 +1,12 @@
 import { ArrowDown, Sparkles } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { siteConfig } from '../data/config';
 import StatusBadge from '../components/StatusBadge';
 import Button from '../components/Button';
-import NoTranslate from '../components/NoTranslate';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -47,12 +49,12 @@ export default function HeroSection() {
 
         {/* Artist name */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-gradient-gold tracking-wider mb-4">
-          <NoTranslate>{siteConfig.artistName}</NoTranslate>
+          {siteConfig.artistName}
         </h1>
 
         {/* Tagline */}
         <p className="text-xl sm:text-2xl md:text-3xl font-heading text-cream-200 tracking-wide mb-2">
-          <NoTranslate>VTuber</NoTranslate>{' '}Artist &{' '}<NoTranslate>Live2D</NoTranslate>{' '}Rigger
+          {t('hero.tagline')}
         </p>
 
         {/* Ornamental bottom frame */}
@@ -69,10 +71,10 @@ export default function HeroSection() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button variant="primary" size="lg" href="#commission-request">
-            <NoTranslate>Request a Commission</NoTranslate>
+            {t('hero.requestCommission')}
           </Button>
           <Button variant="secondary" size="lg" href="#commissions">
-            Explore Portfolio
+            {t('hero.explorePortfolio')}
           </Button>
         </div>
       </div>
@@ -82,7 +84,7 @@ export default function HeroSection() {
         <a
           href="#commissions"
           className="text-cream-300/40 hover:text-gold-400 transition-colors"
-          aria-label="Scroll to content"
+          aria-label={t('hero.scrollDown')}
         >
           <ArrowDown size={24} />
         </a>

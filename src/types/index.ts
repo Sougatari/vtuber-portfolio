@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+// Types
 
 // ============================================================
 // VTuber Portfolio — TypeScript Type Definitions
@@ -93,20 +93,21 @@ export interface IShowcase {
 // --- Process ---
 export interface IProcessStep {
   number: number;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 export interface IProcessWorkflow {
-  title: string;
+  id: string;
+  titleKey: string;
   steps: IProcessStep[];
 }
 
 // --- TOS ---
 export interface ITOSItem {
   id: string;
-  title: string;
-  content: string;
+  titleKey: string;
+  contentKey: string;
 }
 
 export interface ITOSCategory {
@@ -119,8 +120,8 @@ export interface ITOSCategory {
 // --- FAQ ---
 export interface IFAQItem {
   id: string;
-  question: ReactNode;
-  answer: ReactNode;
+  questionKey: string;
+  answerKey: string;
 }
 
 // --- Socials ---
@@ -150,6 +151,6 @@ export interface IAboutData {
 
 // --- Navigation ---
 export interface INavItem {
-  label: string;
+  labelKey: string;
   href: string;
 }

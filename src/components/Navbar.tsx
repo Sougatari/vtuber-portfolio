@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { navItems, siteConfig } from '../data/config';
 import StatusBadge from './StatusBadge';
 import Button from './Button';
-import NoTranslate from './NoTranslate';
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -44,6 +45,22 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language.startsWith('es') ? 'en' : 'es');
+  };
+
+  const LanguageSwitcher = () => (
+    <button
+      onClick={toggleLanguage}
+      className="flex items-center gap-1 px-3 py-1.5 rounded-md bg-charcoal-800 border border-charcoal-700 hover:bg-charcoal-700 transition-colors text-sm font-medium"
+      aria-label="Toggle language"
+    >
+      <span className={i18n.language.startsWith('es') ? 'text-gold-400' : 'text-cream-300'}>ES</span>
+      <span className="text-charcoal-500">/</span>
+      <span className={i18n.language.startsWith('en') ? 'text-gold-400' : 'text-cream-300'}>EN</span>
+    </button>
+  );
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -59,7 +76,7 @@ export default function Navbar() {
             href="#home"
             className="font-heading text-xl md:text-2xl font-bold text-gradient-gold hover:opacity-80 transition-opacity"
           >
-            <NoTranslate>{siteConfig.artistName}</NoTranslate>
+            {siteConfig.artistName}
           </a>
 
           {/* Desktop navigation */}
@@ -74,29 +91,33 @@ export default function Navbar() {
                     : 'text-cream-200 hover:text-cream-50 hover:bg-cream-100/5'
                 }`}
               >
-                {item.label}
+                {t(item.labelKey)}
               </a>
             ))}
           </div>
 
-          {/* Desktop CTA + Status */}
+          {/* Desktop CTA + Status + Lang */}
           <div className="hidden lg:flex items-center gap-4">
+            <LanguageSwitcher />
             <StatusBadge className="text-xs" />
             <Button variant="primary" size="sm" href="#commission-request">
-              <NoTranslate>Commission Me</NoTranslate>
+              {t('cta.commissionMe')}
             </Button>
           </div>
 
-          {/* Mobile hamburger */}
-          <button
-            className="lg:hidden p-2 text-cream-100 hover:text-gold-400 transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile hamburger & Lang */}
+          <div className="flex lg:hidden items-center gap-3">
+            <LanguageSwitcher />
+            <button
+              className="p-2 text-cream-100 hover:text-gold-400 transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -118,13 +139,13 @@ export default function Navbar() {
                     : 'text-cream-200 hover:text-cream-50 hover:bg-cream-100/5'
                 }`}
               >
-                {item.label}
+                {t(item.labelKey)}
               </a>
             ))}
             <div className="mt-3 px-4 flex flex-col gap-3">
               <StatusBadge />
               <Button variant="primary" size="md" href="#commission-request" onClick={handleNavClick}>
-                <NoTranslate>Commission Me</NoTranslate>
+                {t('cta.commissionMe')}
               </Button>
             </div>
           </div>

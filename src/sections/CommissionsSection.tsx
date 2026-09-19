@@ -1,30 +1,31 @@
 import { useState } from 'react';
 import { Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { artPricing, riggingPricing } from '../data/pricing';
 import SectionHeading from '../components/SectionHeading';
 import PricingCard from '../components/PricingCard';
 import ExtraItem from '../components/ExtraItem';
 import FullPackageTable from '../components/FullPackageTable';
-import NoTranslate from '../components/NoTranslate';
 import { siteConfig } from '../data/config';
 
 type ServiceTab = 'art' | 'rigging' | 'fullModel';
 
-const tabs: { id: ServiceTab; label: React.ReactNode }[] = [
-  { id: 'art', label: <><NoTranslate>Art</NoTranslate>{' '}+{' '}<NoTranslate>PSD</NoTranslate></> },
-  { id: 'rigging', label: <><NoTranslate>Live2D</NoTranslate>{' '}<NoTranslate>Rigging</NoTranslate></> },
-  { id: 'fullModel', label: <>Full Model</> },
-];
-
 export default function CommissionsSection() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<ServiceTab>('art');
+
+  const tabs: { id: ServiceTab; label: React.ReactNode }[] = [
+    { id: 'art', label: t('commissions.tabs.art') },
+    { id: 'rigging', label: t('commissions.tabs.rigging') },
+    { id: 'fullModel', label: t('commissions.tabs.fullModel') },
+  ];
 
   return (
     <section id="commissions" className="section-padding bg-charcoal-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Commissions"
-          subtitle="Choose the service that fits your project. All prices are in USD."
+          title={t('commissions.title')}
+          subtitle={t('commissions.subtitle')}
         />
 
         {/* Service tabs */}
@@ -51,9 +52,9 @@ export default function CommissionsSection() {
           <div className="animate-fade-in">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-heading font-semibold text-cream-50 mb-2">
-                {artPricing.title}
+                {t(artPricing.title)}
               </h3>
-              <p className="text-cream-200 max-w-2xl mx-auto">{artPricing.subtitle}</p>
+              <p className="text-cream-200 max-w-2xl mx-auto">{t(artPricing.subtitle)}</p>
             </div>
 
             {/* Pricing cards grid */}
@@ -67,7 +68,7 @@ export default function CommissionsSection() {
             {artPricing.extras.length > 0 && (
               <div className="max-w-2xl mx-auto">
                 <h4 className="text-lg font-heading font-semibold text-cream-50 mb-4 text-center">
-                  <NoTranslate>Art</NoTranslate>{' '}/{' '}<NoTranslate>PSD</NoTranslate>{' '}Extras
+                  {t('commissions.artExtrasTitle')}
                 </h4>
                 <div className="space-y-2">
                   {artPricing.extras.map((extra) => (
@@ -84,10 +85,10 @@ export default function CommissionsSection() {
           <div className="animate-fade-in">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-heading font-semibold text-cream-50 mb-2">
-                {riggingPricing.title}
+                {t(riggingPricing.title)}
               </h3>
               <p className="text-cream-200 max-w-2xl mx-auto">
-                {riggingPricing.subtitle}
+                {t(riggingPricing.subtitle)}
               </p>
             </div>
 
@@ -102,9 +103,9 @@ export default function CommissionsSection() {
             <div className="max-w-3xl mx-auto mb-12">
               <div className="bg-charcoal-800 rounded-2xl p-8 border border-charcoal-700">
                 <h4 className="text-lg font-heading font-semibold text-cream-50 mb-4">
-                  <NoTranslate>Rigging</NoTranslate>{' '}Package Includes
+                  {t('commissions.riggingPackageIncludes')}
                 </h4>
-                <p className="text-cream-200 mb-6">{riggingPricing.description}</p>
+                <p className="text-cream-200 mb-6">{t(riggingPricing.description)}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {riggingPricing.features.map((feature) => (
                     <div
@@ -124,7 +125,7 @@ export default function CommissionsSection() {
                           feature.included ? 'text-cream-100' : 'text-charcoal-500 line-through'
                         }
                       >
-                        {feature.name}
+                        {t(feature.name)}
                       </span>
                     </div>
                   ))}
@@ -136,7 +137,7 @@ export default function CommissionsSection() {
             {riggingPricing.extras.length > 0 && (
               <div className="max-w-2xl mx-auto">
                 <h4 className="text-lg font-heading font-semibold text-cream-50 mb-4 text-center">
-                  <NoTranslate>Rigging</NoTranslate>{' '}Extras
+                  {t('commissions.riggingExtrasTitle')}
                 </h4>
                 <div className="space-y-2">
                   {riggingPricing.extras.map((extra) => (
@@ -153,11 +154,10 @@ export default function CommissionsSection() {
           <div className="animate-fade-in">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-heading font-semibold text-cream-50 mb-2">
-                Full Model — Art + Rigging
+                {t('commissions.fullModelTitle')}
               </h3>
               <p className="text-cream-200 max-w-2xl mx-auto">
-                Get the complete package: custom{' '}<NoTranslate>VTuber</NoTranslate>{' '}art with prepared{' '}<NoTranslate>PSD</NoTranslate>{' '}and
-                professional{' '}<NoTranslate>Live2D</NoTranslate>{' '}rigging, all in one commission.
+                {t('commissions.fullModelSubtitle')}
               </p>
             </div>
 
@@ -167,7 +167,7 @@ export default function CommissionsSection() {
             </div>
 
             <p className="text-center text-cream-300 text-sm mt-6">
-              Additional options available from Art and Rigging extras.
+              {t('commissions.fullModelExtrasNote')}
             </p>
           </div>
         )}
@@ -175,7 +175,7 @@ export default function CommissionsSection() {
         {/* Global Payment Methods Note */}
         <div className="mt-16 text-center animate-fade-in">
           <p className="text-cream-200 text-sm mb-3">
-            Accepted payment methods:
+            {t('commissions.paymentMethodsLabel')}
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {siteConfig.paymentMethods.map((method) => (
@@ -183,7 +183,7 @@ export default function CommissionsSection() {
                 key={method}
                 className="px-3 py-1 rounded-full bg-charcoal-800 border border-charcoal-700 text-cream-100 text-xs font-medium"
               >
-                <NoTranslate>{method}</NoTranslate>
+                {method}
               </span>
             ))}
           </div>

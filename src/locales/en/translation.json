@@ -1,0 +1,589 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "commissions": "Commissions",
+    "process": "Process",
+    "tos": "TOS",
+    "faq": "FAQ",
+    "about": "About"
+  },
+  "hero": {
+    "tagline": "VTuber Artist & Live2D Rigger",
+    "requestCommission": "Request a Commission",
+    "explorePortfolio": "Explore Portfolio",
+    "scrollDown": "Scroll to content"
+  },
+  "status": {
+    "commissionsOpen": "Commissions OPEN",
+    "commissionsClosed": "Commissions CLOSED",
+    "open": "OPEN",
+    "closed": "CLOSED"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A selection of my work — VTuber art and Live2D Rigging Showcases.",
+    "artTab": "Art",
+    "live2dTab": "Live2D Showcases",
+    "categories": {
+      "all": "All",
+      "fullBody": "Full Body",
+      "halfBody": "Half Body",
+      "bust": "Bust",
+      "expressions": "Expressions",
+      "other": "Other"
+    },
+    "emptyArt": "Gallery items coming soon. Stay tuned!",
+    "emptyLive2d": "Live2D Showcases coming soon. Stay tuned!"
+  },
+  "commissions": {
+    "title": "Commissions",
+    "subtitle": "Choose the service that fits your project. All prices are in USD.",
+    "tabs": {
+      "art": "Art + PSD",
+      "rigging": "Live2D Rigging",
+      "fullModel": "Full Model"
+    },
+    "artExtrasTitle": "Art / PSD Extras",
+    "riggingExtrasTitle": "Rigging Extras",
+    "riggingPackageIncludes": "Rigging Package Includes",
+    "fullModelTitle": "Full Model — Art + Rigging",
+    "fullModelSubtitle": "Get the complete package: custom VTuber art with prepared PSD and professional Live2D Rigging, all in one commission.",
+    "fullModelExtrasNote": "Additional options available from Art and Rigging extras.",
+    "paymentMethodsLabel": "Accepted payment methods:",
+    "usd": "USD",
+    "tbd": "TBD"
+  },
+  "pricing": {
+    "art": {
+      "title": "VTuber Art + PSD Preparation",
+      "subtitle": "Custom VTuber illustration with layered PSD file prepared for Live2D Rigging.",
+      "bust": {
+        "label": "Bust",
+        "description": "Head and shoulders illustration, perfect for a focused VTuber model.",
+        "includes": [
+          "High-resolution illustration",
+          "Layered PSD prepared for Live2D",
+          "Up to 2 revisions at sketch stage"
+        ]
+      },
+      "halfBody": {
+        "label": "Half Body",
+        "description": "Waist-up illustration showing more of your character's design and outfit.",
+        "includes": [
+          "High-resolution illustration",
+          "Layered PSD prepared for Live2D",
+          "Up to 2 revisions at sketch stage"
+        ]
+      },
+      "fullBody": {
+        "label": "Full Body",
+        "description": "Complete character illustration from head to toe with full outfit details.",
+        "includes": [
+          "High-resolution illustration",
+          "Layered PSD prepared for Live2D",
+          "Up to 2 revisions at sketch stage"
+        ]
+      },
+      "extras": {
+        "expression": {
+          "name": "Extra Expression",
+          "description": "Additional facial expression for your character."
+        },
+        "arm": {
+          "name": "Extra Arm / Hand Pose",
+          "description": "Additional arm or hand position."
+        },
+        "hairstyle": {
+          "name": "Extra Hairstyle",
+          "description": "Additional hairstyle variant for your character."
+        },
+        "outfit": {
+          "name": "Extra Outfit",
+          "description": "Additional outfit design."
+        },
+        "accessory": {
+          "name": "Extra Accessory",
+          "description": "Additional accessory item for your character."
+        }
+      }
+    },
+    "rigging": {
+      "title": "Live2D Rigging",
+      "subtitle": "Professional Live2D Rigging for your prepared PSD. One comprehensive package.",
+      "description": "Full Live2D Rigging service. You provide a properly prepared and separated PSD file, and I bring your character to life with smooth, expressive movements.",
+      "bust": {
+        "label": "Bust",
+        "description": "Bust-level Live2D Rigging with all included features.",
+        "includes": [
+          "Full Rigging package features",
+          "VTube Studio ready (.moc3)",
+          "Testing & adjustments"
+        ]
+      },
+      "halfBody": {
+        "label": "Half Body",
+        "description": "Half Body Live2D Rigging with all included features plus torso movement.",
+        "includes": [
+          "Full Rigging package features",
+          "VTube Studio ready (.moc3)",
+          "Testing & adjustments"
+        ]
+      },
+      "fullBody": {
+        "label": "Full Body",
+        "description": "Full Body Live2D Rigging with complete movement range and physics.",
+        "includes": [
+          "Full Rigging package features",
+          "VTube Studio ready (.moc3)",
+          "Testing & adjustments"
+        ]
+      },
+      "features": {
+        "headXYZ": "Head X / Y / Z (45-degree turns)",
+        "expressions": "Basic expressions: sad, happy, blushing",
+        "eyeTracking": "Eye tracking",
+        "blinking": "Blinking",
+        "mouthMovement": "Mouth movement",
+        "breathing": "Breathing",
+        "hairPhysics": "Hair physics",
+        "clothingPhysics": "Clothing physics",
+        "accessoryPhysics": "Accessory physics",
+        "generalPhysics": "General physics",
+        "bodyMovement": "Body movement",
+        "vtubeStudioCompatibility": "VTube Studio compatibility"
+      },
+      "extras": {
+        "expression": {
+          "name": "Rig of activatables without physics",
+          "description": "Extra expression switches, hand poses, hats, masks."
+        },
+        "animation": {
+          "name": "Special Animation",
+          "description": "Custom animation or special movement. (transformations)"
+        },
+        "accessory": {
+          "name": "Additional Accessory with physics",
+          "description": "Extra accessory Rigging with physics. (hairstyles, wings, tails)"
+        },
+        "custom": {
+          "name": "Other Custom Rigging Work",
+          "description": "Custom Rigging request — contact for details."
+        }
+      }
+    }
+  },
+  "process": {
+    "title": "Process",
+    "subtitle": "A clear overview of how we work together from start to finish.",
+    "artTab": "Art + PSD",
+    "riggingTab": "Live2D Rigging",
+    "communicationNote": "During the process, we will stay in contact so I can share progress previews and make the included revisions or modifications according to the commission terms.",
+    "art": {
+      "title": "Art + PSD Preparation",
+      "steps": {
+        "1": {
+          "title": "Commission Request",
+          "description": "You submit the commission form with your character details, references, and requirements."
+        },
+        "2": {
+          "title": "Quote",
+          "description": "I review your request, assess complexity, and confirm the final quote."
+        },
+        "3": {
+          "title": "Sketch",
+          "description": "I create the initial sketch based on your brief and references."
+        },
+        "4": {
+          "title": "50% Payment",
+          "description": "You pay the first 50% via our supported platforms (PayPal, Takenos, VGen, etc.) to begin work on your commission."
+        },
+        "5": {
+          "title": "Lineart + Color",
+          "description": "The illustration is developed with clean lineart and full coloring."
+        },
+        "6": {
+          "title": "PSD Preparation",
+          "description": "The artwork is separated into layers and organized for Live2D Rigging."
+        },
+        "7": {
+          "title": "Final Review",
+          "description": "You review the final result and request any included revisions."
+        },
+        "8": {
+          "title": "Remaining 50%",
+          "description": "The remaining balance is paid via the agreed platform before final delivery."
+        },
+        "9": {
+          "title": "Delivery",
+          "description": "The final high-resolution files and layered PSD are delivered to you."
+        }
+      }
+    },
+    "rigging": {
+      "title": "Live2D Rigging",
+      "steps": {
+        "1": {
+          "title": "Commission Request",
+          "description": "You submit the commission form with your rigging requirements."
+        },
+        "2": {
+          "title": "PSD Review",
+          "description": "I check whether your PSD is suitable for the requested rig."
+        },
+        "3": {
+          "title": "Quote",
+          "description": "I confirm the final price based on the PSD and requirements."
+        },
+        "4": {
+          "title": "50% Payment",
+          "description": "You pay the first 50% via our supported platforms (PayPal, Takenos, VGen, etc.) to begin work."
+        },
+        "5": {
+          "title": "Rigging",
+          "description": "Your model is rigged according to the selected package features."
+        },
+        "6": {
+          "title": "Progress Samples",
+          "description": "I share previews and progress samples during development."
+        },
+        "7": {
+          "title": "Revisions",
+          "description": "You review the work and request any included changes."
+        },
+        "8": {
+          "title": "Remaining 50%",
+          "description": "The remaining balance is paid via the agreed platform before final delivery."
+        },
+        "9": {
+          "title": "Delivery",
+          "description": "The final .moc3 file and related assets are delivered, ready for VTube Studio."
+        }
+      }
+    }
+  },
+  "tos": {
+    "title": "Terms of Service",
+    "subtitle": "Please review all terms before requesting a commission.",
+    "items": {
+      "tos01": {
+        "title": "Commission Acceptance",
+        "content": "Submitting a commission request does not guarantee acceptance. I reserve the right to accept or decline any commission."
+      },
+      "tos02": {
+        "title": "Commission Scope",
+        "content": "The final price, included features, deliverables, revisions, and estimated completion time will be agreed upon before work begins. Requests outside the agreed scope may require an additional fee."
+      },
+      "tos03": {
+        "title": "Payment",
+        "content": "All commissions use a 50/50 payment structure: 50% upfront before work begins. 50% remaining balance before final delivery. I will not begin work until the initial payment has been received."
+      },
+      "tos04": {
+        "title": "Payment Methods",
+        "content": "Available payment methods will be confirmed during the commission process. Payment processing fees or currency conversion fees may apply depending on the selected platform."
+      },
+      "tos05": {
+        "title": "Quotes",
+        "content": "Displayed prices are base prices. The final quote may change depending on character complexity, additional features, commercial use, deadline, or other requested work."
+      },
+      "tos06": {
+        "title": "Revisions",
+        "content": "Revisions are limited to the amount and stages agreed upon for the commission. Minor changes within the agreed scope are included. Major changes, redesigns, or requests that require previously approved work to be substantially redone may incur an additional fee."
+      },
+      "tos07": {
+        "title": "Approval of Work",
+        "content": "Once a stage has been approved, I may proceed to the next stage. Changes requested after approval may be treated as additional revisions and may incur additional costs."
+      },
+      "tos08": {
+        "title": "Refunds",
+        "content": "Once the agreed sketch stage has been completed and approved, payments are non-refundable. If a cancellation is requested before that point, any possible refund will depend on the amount of work already completed and will be discussed individually."
+      },
+      "tos09": {
+        "title": "Cancellation",
+        "content": "Either party may request cancellation. If the client cancels after work has begun, payment for completed work is non-refundable. If I must cancel the commission, I will communicate the situation and provide an appropriate refund for work that has not been completed."
+      },
+      "tos10": {
+        "title": "Deadlines",
+        "content": "Delivery dates are estimates unless a specific deadline has been explicitly agreed upon. Completion times may change due to project complexity, revisions, workload, client response time, or unforeseen circumstances."
+      },
+      "tos11": {
+        "title": "Urgent Commissions",
+        "content": "Urgent commissions may be accepted depending on availability. An additional fee may apply."
+      },
+      "tos12": {
+        "title": "Client Responsibilities",
+        "content": "The client is responsible for providing accurate references, files, instructions, feedback, and approvals necessary to complete the commission."
+      },
+      "tos13": {
+        "title": "Client Delays",
+        "content": "Delays caused by missing information, files, feedback, or approvals from the client may extend the estimated delivery time. Extended periods without communication may result in the commission being paused."
+      },
+      "tos14": {
+        "title": "Additional Work",
+        "content": "Requests that were not included in the original commission scope may be quoted separately before the additional work begins."
+      },
+      "tos15": {
+        "title": "Commercial Use",
+        "content": "The intended use of the commissioned work must be disclosed during the commission process. Commercial-use rights and any additional licensing fees will be agreed upon before work begins."
+      },
+      "tos16": {
+        "title": "Copyright",
+        "content": "I retain authorship and copyright of my original artwork and Rigging work unless a separate written agreement states otherwise. Purchasing a commission does not constitute a transfer of copyright ownership."
+      },
+      "tos17": {
+        "title": "Client Usage Rights",
+        "content": "The client receives the usage rights agreed upon for their commission. Unless explicitly agreed otherwise, the client may not resell, redistribute, claim authorship of, or transfer the original commissioned files as their own work."
+      },
+      "tos18": {
+        "title": "Portfolio Rights",
+        "content": "Unless a private commission has been agreed upon beforehand, I may display completed work and appropriate work-in-progress material in my: Portfolio, Website, Social media, YouTube, Promotional material."
+      },
+      "tos19": {
+        "title": "Private Commissions",
+        "content": "If the client requires the commission to remain private, this must be discussed and agreed upon before the commission begins. Additional fees may apply depending on the circumstances."
+      },
+      "tos20": {
+        "title": "Artist Credit",
+        "content": "Clients are encouraged to credit me when publicly displaying the commissioned work. Any specific credit requirements will be communicated during the commission process."
+      },
+      "tos21": {
+        "title": "AI Policy",
+        "content": "My commissioned artwork, PSD files, Rigging files, and other original work may not be used for: AI training, Dataset creation, Machine-learning training, AI image generation, AI model development, Similar AI-related purposes unless I have given explicit written permission."
+      },
+      "tos22": {
+        "title": "Chargebacks & Payment Disputes",
+        "content": "Clients should contact me directly to resolve payment or commission issues before initiating a chargeback or payment dispute. Unauthorized chargebacks may be contested using the available commission records, payment records, and agreed Terms of Service."
+      },
+      "tos23": {
+        "title": "File Delivery",
+        "content": "Final files will be delivered digitally through the agreed delivery method. The client is responsible for downloading and securely storing their files after delivery."
+      },
+      "tos24": {
+        "title": "File Storage",
+        "content": "I may not permanently retain completed commission files indefinitely. Clients are responsible for maintaining their own backups of delivered files."
+      },
+      "tos25": {
+        "title": "Technical Limitations",
+        "content": "The final result may be affected by technical limitations, client-provided files, software limitations, or requirements outside the agreed scope. Any significant technical limitation discovered during the project will be communicated to the client."
+      },
+      "tos26": {
+        "title": "Third-Party Software",
+        "content": "The functionality of commissioned models may depend on third-party software such as VTube Studio or Live2D Cubism. I cannot guarantee permanent compatibility with future versions or changes made by third-party software developers."
+      },
+      "tos27": {
+        "title": "Agreement",
+        "content": "By proceeding with payment, the client confirms that they have read, understood, and agreed to these Terms of Service. Any exception or modification to these terms must be agreed upon in writing before the relevant work begins."
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently asked questions about commissions and services.",
+    "items": {
+      "faq01": {
+        "question": "What services do you offer?",
+        "answer": "I offer VTuber Art + PSD Preparation, Live2D Rigging, and a Full Model package combining both services."
+      },
+      "faq02": {
+        "question": "Can I commission only the artwork?",
+        "answer": "Yes. The Art + PSD Preparation service includes the illustration and a layered PSD prepared specifically for Live2D Rigging."
+      },
+      "faq03": {
+        "question": "Can I commission only the Rigging?",
+        "answer": "Yes. You can provide your own Live2D-ready PSD and commission me for the Rigging only. I will review the PSD before confirming the final price."
+      },
+      "faq04": {
+        "question": "Do you accept existing PSD files for Rigging?",
+        "answer": "Yes, as long as the PSD is properly separated and contains the necessary layers for Rigging. I will review your file before accepting the commission. Additional separation or art fixes may require an extra fee."
+      },
+      "faq05": {
+        "question": "What is included in your Rigging?",
+        "answer": "My Rigging is offered as one package, with the included features listed in the Rigging section of my portfolio. Additional or more complex features may require an extra fee."
+      },
+      "faq06": {
+        "question": "How much does a commission cost?",
+        "answer": "Prices depend on the body size, service, and complexity of the model. You can find the starting prices in the Commissions section. For more complex designs, I will provide a final quote after reviewing your references."
+      },
+      "faq07": {
+        "question": "How does the payment work?",
+        "answer": "I use a 50/50 payment system. The first 50% is required before I begin working, and the remaining 50% must be paid before the final files are delivered."
+      },
+      "faq08": {
+        "question": "Can I request changes during the commission?",
+        "answer": "Yes. You will have opportunities to review the work during the process. The number and type of revisions included depend on the stage and service. Major changes requested after approval may require an additional fee."
+      },
+      "faq09": {
+        "question": "How long does a commission take?",
+        "answer": "The delivery time depends on the complexity of the model, the selected service, and the current commission queue. I will provide an estimated timeframe when your commission is confirmed."
+      },
+      "faq10": {
+        "question": "Do you accept commercial use?",
+        "answer": "Yes. Commercial use is available according to my Terms of Service. Please mention your intended use when submitting your commission request so I can include it in the quote if necessary."
+      },
+      "faq11": {
+        "question": "Can I use the model for streaming and monetized content?",
+        "answer": "Yes, provided that your commission includes the appropriate commercial-use rights. Please specify your intended use when requesting a commission."
+      },
+      "faq12": {
+        "question": "Can I request an urgent commission?",
+        "answer": "Urgent commissions may be accepted depending on my current workload. An additional fee may apply. Please contact me with your deadline before placing a request."
+      },
+      "faq13": {
+        "question": "What happens if I need to cancel my commission?",
+        "answer": "Cancellation and refund conditions depend on how far the commission has progressed. Please read my Terms of Service before commissioning."
+      },
+      "faq14": {
+        "question": "Can you keep my commission private?",
+        "answer": "Yes, if you offer a private commission option. This should be explicitly agreed upon before work begins, as otherwise completed work may be used in my portfolio and promotional content."
+      },
+      "faq15": {
+        "question": "What files will I receive?",
+        "answer": "For Art + PSD Preparation, you will receive the final artwork and the layered PSD prepared for Live2D. For Rigging, you will receive the completed Rigging files and the files necessary for use in the agreed setup."
+      },
+      "faq16": {
+        "question": "Will you help me set up the model in VTube Studio?",
+        "answer": "I can provide basic guidance for importing and using the model in VTube Studio. Full technical troubleshooting outside the delivered model may not be included."
+      },
+      "faq17": {
+        "question": "How do I request a commission?",
+        "answer": "Use the Request a Commission button and fill out the commission form with your character references, desired service, deadline, budget, and other relevant information. I will review your request and contact you with the next steps."
+      }
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Hi! I'm a VTuber artist, Live2D Rigger, programmer, 2D animator, pianist and who loves Japanese culture.",
+    "paragraph2": "I am currently just a systems engineering student, but I give my all in every project or task so I can keep improving in what I love.",
+    "paragraph3": "My goal is to leave a mark in the Vtuber industry with some big project and be the next Spanish-speaking Hololive."
+  },
+  "form": {
+    "title": "Request a Commission",
+    "subtitle": "Fill out the form below with your project details. I'll review your request and get back to you with a quote.",
+    "contactInfo": "Contact Information",
+    "name": {
+      "label": "Name / Alias",
+      "placeholder": "Your name or alias",
+      "helper": "How should I address you in our conversation (You'll go out with this name in the Showcase)."
+    },
+    "email": {
+      "label": "Email",
+      "helper": "I'll send quotes, updates, and final deliveries to this address."
+    },
+    "social": {
+      "label": "Social / Discord",
+      "optional": "Optional",
+      "placeholder": "Discord tag or social handle",
+      "helper": "Alternative contact if you prefer real-time messaging."
+    },
+    "service": {
+      "legend": "Service",
+      "label": "Select Service",
+      "placeholder": "Choose a service...",
+      "helper": "Determines the scope and pricing of your commission.",
+      "options": {
+        "artPsd": "Art + PSD Preparation",
+        "rigging": "Live2D Rigging",
+        "fullModel": "Full Model — Art + Rigging"
+      }
+    },
+    "bodySize": {
+      "label": "Desired Body Size",
+      "placeholder": "Choose a size...",
+      "helper": "Affects illustration coverage and Rigging complexity.",
+      "options": {
+        "bust": "Bust",
+        "halfBody": "Half Body",
+        "fullBody": "Full Body"
+      }
+    },
+    "characterDetails": "Character Details",
+    "characterDescription": {
+      "label": "Character Description",
+      "placeholder": "Describe your character's appearance, personality, and key features... This is very useful for me regarding the shapes of his mouth.",
+      "helper": "The more detail you provide, the more accurate the initial sketch will be."
+    },
+    "complexity": {
+      "label": "Complexity",
+      "optional": "Optional",
+      "placeholder": "Simple, moderate, or complex design?",
+      "helper": "Helps estimate the time and price of your commission."
+    },
+    "visualReferences": "Visual References",
+    "referenceImages": {
+      "label": "Reference Images",
+      "optional": "Optional",
+      "uploadClick": "Click to upload reference images",
+      "uploadFormats": "PNG, JPG, WEBP — multiple files allowed",
+      "helper": "Mood boards, character sheets, or pose references help me understand your vision.",
+      "removeAlt": "Remove reference {{index}}"
+    },
+    "referenceLinks": {
+      "label": "Reference Links or reviews of .PSD",
+      "optional": "Optional",
+      "placeholder": "Paste Google Drive / Imgur / Pinterest links if your files are too large",
+      "helper": "Or paste a Google Drive / Imgur / Pinterest link if your files are too large."
+    },
+    "extras": {
+      "legend": "Extras",
+      "optional": "Optional",
+      "helper": "Select any add-ons you'd like to include with your commission.",
+      "customLabel": "Other specific extras or custom requests",
+      "customPlaceholder": "Describe any other extra features you need..."
+    },
+    "projectDetails": "Project Details",
+    "deadline": {
+      "label": "Desired Deadline (Starting from 3 weeks)",
+      "optional": "Optional",
+      "placeholder": "e.g., No rush, 2 months"
+    },
+    "budget": {
+      "label": "Approximate Budget",
+      "optional": "Optional",
+      "placeholder": "USD range or amount",
+      "helper": "Helps me tailor the scope to your budget."
+    },
+    "usage": {
+      "label": "Usage",
+      "placeholder": "Choose usage type...",
+      "helper": "Commercial use may affect licensing and pricing.",
+      "options": {
+        "personal": "Personal Use",
+        "commercial": "Commercial Use"
+      }
+    },
+    "additionalDetails": {
+      "label": "Additional Details",
+      "optional": "Optional",
+      "placeholder": "Anything else you'd like to mention about your project..."
+    },
+    "tosAgreement": "I have read and agree to the",
+    "tosLink": "Terms of Service",
+    "paymentMethods": "Accepted payment methods",
+    "submit": "Submit Commission Request",
+    "sending": "Sending...",
+    "closedMessage_waitlist": "Commissions are currently closed. Follow my socials for announcements on when they reopen!",
+    "error": "Something went wrong. Please try again or reach out via social media.",
+    "required": "*"
+  },
+  "success": {
+    "title": "Commission Request Sent!",
+    "message": "Thank you! I have received your request and reference images. Please make sure to contact me or follow me on my social media so we can stay in touch easily while I review your project.",
+    "sendAnother": "Send Another Request"
+  },
+  "footer": {
+    "madeWith": "Made with"
+  },
+  "cta": {
+    "commissionMe": "Commission Me",
+    "waitlist": "Waitlist"
+  },
+  "common": {
+    "usd": "USD",
+    "tbd": "TBD",
+    "optional": "Optional",
+    "required": "*",
+    "imageComingSoon": "Image coming soon",
+    "size": "Size",
+    "fullPackage": "Full Package"
+  }
+}
